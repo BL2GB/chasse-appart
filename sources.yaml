@@ -74,8 +74,39 @@ regies:
   - {id: regisseurs, name: Les Régisseurs Associés, url: "https://www.regisseurs.ch/louer/", niveau: 3}
   - {id: barde, name: Barde & Cie, url: "https://www.bardecie.ch/immobilier", niveau: 3}
 
+  # --- ajoutées le 16.11 (fin de l'annuaire immobilier-ge.ch, pages 7 à 11) : page location cherchée automatiquement
+  - {id: florissante, name: Régie Florissante, url: "https://www.regieflorissante.ch", discover: true, niveau: 3}
+  - {id: kedros, name: Kedros, url: "https://www.kedros.ch", discover: true, niveau: 3}
+  - {id: regie-tb, name: Régie TB, url: "https://www.regie-tb.ch", discover: true, niveau: 3}
+  - {id: nema, name: NEMA SA, url: "https://www.nemasa.ch", discover: true, niveau: 3}
+  - {id: aige, name: Alliance Immobilière Genevoise, url: "https://www.aige.ch", discover: true, niveau: 3}
+  - {id: beaver, name: Beaver Immobilier, url: "https://www.beaver-immo.ch", discover: true, niveau: 3}
+  - {id: imwire, name: Imwire Properties, url: "https://www.imwire.ch", discover: true, niveau: 3}
+  - {id: melcarne, name: Melcarne SA, url: "https://www.melcarne.ch", discover: true, niveau: 3}
+  - {id: rgimmo, name: RGIMMO, url: "https://www.rgimmo.ch", discover: true, niveau: 3}
+  - {id: novihome, name: Novihome, url: "https://www.novihome.ch", discover: true, niveau: 3}
+  - {id: duboux, name: Régie Duboux, url: "https://www.regieduboux.ch", discover: true, niveau: 3}
+  - {id: champeret, name: Champeret Immobilier, url: "https://www.champeret.ch", discover: true, niveau: 3}
+  - {id: classicus, name: Classicus Real Estate, url: "https://www.c-re.ch", discover: true, niveau: 3}
+  - {id: iseli, name: Iseli Immobilier, url: "https://www.regieiseli.ch", discover: true, niveau: 3}
+  - {id: immo-am, name: Immo Advisor & Management, url: "https://www.immo-am.ch", discover: true, niveau: 3}
+  - {id: ikami, name: Ikami, url: "https://www.ikami.ch", discover: true, niveau: 3}
+  - {id: beric, name: BERIC Management, url: "https://www.beric.ch", discover: true, niveau: 3}
+  - {id: lemanik, name: Lemanik Home, url: "https://www.lemanikhome.ch", discover: true, niveau: 3}
+  - {id: ribordy, name: Ribordy Immobilier, url: "https://www.ribordysa.ch", discover: true, niveau: 3}
+  - {id: regie-alpes, name: Régie des Alpes, url: "https://www.regie-alpes.ch", discover: true, niveau: 3}
+  - {id: nestya, name: Nestya, url: "https://www.nestya.ch", discover: true, niveau: 3}
+  - {id: propevo, name: Propevo, url: "https://www.propevo.com", discover: true, niveau: 3}
+  - {id: allianz, name: Allianz Suisse Immobilier, url: "https://www.allianz-immo.ch", discover: true, niveau: 3}
+  - {id: baezner, name: Gérard Baezner & Cie (via immobilier.ch), url: "https://www.immobilier.ch/fr/carte/agence/gerard-baezner-cie-17/louer/page-1?gr=1&clrs=1", niveau: 1}
+
 portails:
   - {id: immobilier-carouge, name: immobilier.ch (Carouge), url: "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-1?clrs=1", niveau: 1}
   - {id: immobilier-geneve, name: immobilier.ch (Genève), url: "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1", max_pages: 40, niveau: 1}
   - {id: flatfox, name: Flatfox, url: "https://flatfox.ch/fr/search/?east=6.185&north=46.225&south=46.170&west=6.105&object_category=APARTMENT&offer_type=RENT", niveau: 2}
   - {id: homegate, name: Homegate, url: "https://www.homegate.ch/louer/appartement/lieu-carouge-ge/liste-annonces", niveau: 2}
+  # --- ajoutés le 16.11 pour capter Grange, Livit, Wincasa, Privera (qui publient sur les portails)
+  - {id: comparis-carouge, name: Comparis (Carouge), url: "https://www.comparis.ch/immobilien/marktplatz/carouge-ge/mieten", page_param: page, max_pages: 20, niveau: 2}
+  - {id: comparis-geneve, name: Comparis (Genève), url: "https://www.comparis.ch/immobilien/marktplatz/genf/mieten", page_param: page, max_pages: 40, niveau: 2}
+  - {id: immoscout-geneve, name: ImmoScout24 (Genève), url: "https://www.immoscout24.ch/fr/appartement/louer/lieu-geneve", page_param: pn, max_pages: 40, niveau: 2}
+  - {id: immoscout-carouge, name: ImmoScout24 (Carouge), url: "https://www.immoscout24.ch/fr/appartement/louer/lieu-carouge-ge", page_param: pn, max_pages: 20, niveau: 2}
