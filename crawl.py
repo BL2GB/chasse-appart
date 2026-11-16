@@ -16,6 +16,7 @@ Sorties dans data/ :
   batches/<date>.json  fiches nouvelles d'un passage (gardées 30 jours)
   index.json           liste des lots (lisible sans API GitHub)
   run.json             état de chaque source au dernier passage
+  live.json            annonces visibles par source (passage complet seulement)
 """
 import asyncio, hashlib, json, os, re, sys, time
 from datetime import datetime, timezone
@@ -38,7 +39,7 @@ SALE_LINK = re.compile(r"vendre|acheter|vente|kaufen|buy|commercial|parking|bure
 LISTING_HINT = re.compile(r"(CHF|Fr\.|\bfrs?\b|loyer|pi[eè]ces?|pces?|\bp\.|chambres?|m²|m2|rooms?|Zimmer)", re.I)
 PRICE_HINT = re.compile(r"\d[\d'’ .]{2,}")
 
-ROOMS = re.compile(r"(\d+(?:[.,]5)?)\s*(?:pi[eè]ces?|pces?|p\.|rooms?|Zimmer)", re.I)
+ROOMS = re.compile(r"(?<![\d.,])(\d+(?:[.,][05])?)\s*(?:pi[eè]ces?|pces?|p\.|rooms?|Zimmer)", re.I)
 BEDROOMS = re.compile(r"(\d)\s*chambres?", re.I)
 CHF = re.compile(r"(?:CHF|Fr\.?|frs?)\s*([\d'’ .]{3,9})|([\d'’ .]{3,9})\s*(?:CHF|\.-|Fr\.?)", re.I)
 NOT_HOUSING = re.compile(r"\b(à vendre|prix de vente|parking|place de parc|garage|box|bureau|arcade|"
@@ -112,9 +113,12 @@ LINKS_JS = r"""
 MORE_JS = r"""
 () => {
   const rx = /^(voir|afficher|charger) (plus|davantage)|^plus de (résultats|biens|objets)|^load more|^mehr (anzeigen|laden)|^show more/i;
+  const here = location.href.split('#')[0];
   for (const b of document.querySelectorAll('button, a, [role=button]')) {
     const t = (b.innerText || '').trim();
-    if (rx.test(t) && b.offsetParent !== null) { b.scrollIntoView(); b.click(); return t; }
+    if (!rx.test(t) || b.offsetParent === null) continue;
+    if (b.tagName === 'A' && b.href && !/^javascript:/.test(b.href) && b.href.split('#')[0] !== here) continue;
+    b.scrollIntoView(); b.click(); return t;
   }
   return null;
 }
@@ -126,8 +130,9 @@ NEXT_BTN_JS = r"""
   const els = [...document.querySelectorAll('button, [role=button], li, span, a:not([href]), a[href="#"], a[href^="javascript"]')];
   const vis = e => e.offsetParent !== null && !e.disabled && !/disabled/.test(e.className || '');
   const lbl = e => ((e.innerText || '') + ' ' + (e.getAttribute('aria-label') || '')).trim();
+  const inPager = e => !!e.closest('nav, [class*=pag], [class*=Pag], [id*=pag], [aria-label*=pag], [role=navigation]');
   let t = els.find(e => vis(e) && /^(suivant|suivante|page suivante|next|weiter|›|»|>|→)$/i.test(lbl(e)))
-       || els.find(e => vis(e) && lbl(e) === String(n) && e.children.length <= 1);
+       || els.find(e => vis(e) && inPager(e) && lbl(e) === String(n) && e.children.length <= 1);
   if (!t) return false;
   t.scrollIntoView(); t.click(); return true;
 }
@@ -147,7 +152,16 @@ DETAIL_JS = r"""
 
 
 # ---------------------------------------------------------------- utilitaires
-NAV_PARAMS = re.compile(r"^(returnto|return|ref|referer|from|origin|back|page|p|sort|sortingfield|order|zoom|utm_.*|fbclid|gclid)$", re.I)
+NAV_PARAMS = re.compile(r"^(returnto|return|referer|from|origin|back|page|sort\w*|order|zoom|utm_\w+|fbclid|gclid)$", re.I)
+PAGER_HINT = re.compile(r"^(?:[2-9]|[1-9]\d{1,2}|suivant|suivante|page suivante|next|weiter|›|»|>|→)$", re.I)
+LIVE_NAV = re.compile(r"[?&](returnto|return|origin|from|back|sort\w*|order|zoom|page|utm_\w+|fbclid|gclid)=[^&#]*", re.I)
+
+
+def live_key(u: str) -> str:
+    """Même normalisation que la synchronisation du tableau de bord (sync_prep.ukey)."""
+    u = LIVE_NAV.sub("", u or "")
+    u = re.sub(r"\?&", "?", u)
+    return u.split("#")[0].rstrip("/?&").lower()
 
 
 def norm_url(u: str) -> str:
@@ -290,10 +304,10 @@ async def crawl_source(ctx, src: dict, cfg: dict, seen: dict, full: bool, first_
             await page.goto(target, wait_until="domcontentloaded", timeout=45000)
             await settle(page)
 
-        cards, keys, visited = [], set(), {page.url.split("#")[0]}
+        cards, keys, visited = [], {}, {page.url.split("#")[0]}
         max_pages = int(src.get("max_pages", 25))
         start_url = page.url
-        pages_without_new = 0
+        pages_without_new = empty_pages = 0
         try:
             while True:
                 res["pages"] += 1
@@ -307,19 +321,32 @@ async def crawl_source(ctx, src: dict, cfg: dict, seen: dict, full: bool, first_
                     await settle(page, scrolls=2)
                     if await page.evaluate("() => document.body.innerText.length") <= before:
                         break
+                else:
+                    res["more_capped"] = True                 # encore des « voir plus » après 15 clics
                 added = new_here = 0
                 for c in await page.evaluate(CARDS_JS):
-                    k = (c["text"][:120] if c.get("weak") else norm_url(c["href"])) + "|" + c["text"][:60]
                     t = c["text"]
-                    if k not in keys and LISTING_HINT.search(t) and (PRICE_HINT.search(t) or ROOMS.search(t)):
-                        keys.add(k)
-                        cards.append(c)
-                        added += 1
-                        if card_hash(src["id"], c) not in seen:
-                            new_here += 1
+                    if not (LISTING_HINT.search(t) and (PRICE_HINT.search(t) or ROOMS.search(t))):
+                        continue
+                    # Une annonce = une adresse : si le même lien revient (titre, photo, « Découvrir »),
+                    # on garde le bloc de texte le plus complet.
+                    k = c["text"][:120] if c.get("weak") else norm_url(c["href"])
+                    if k in keys:
+                        i = keys[k]
+                        if len(t) > len(cards[i]["text"]):
+                            cards[i] = c
+                        continue
+                    keys[k] = len(cards)
+                    cards.append(c)
+                    added += 1
+                    if card_hash(src["id"], c) not in seen:
+                        new_here += 1
                 if res["pages"] >= max_pages:
+                    res["end"] = "max_pages"
                     break
-                if res["pages"] > 1 and added == 0:          # la « page suivante » n'apporte rien
+                empty_pages = empty_pages + 1 if (res["pages"] > 1 and added == 0) else 0
+                if empty_pages >= 2:                          # deux pages d'affilée sans rien de neuf : fin
+                    res["end"] = "empty"
                     break
                 # Passage incrémental : deux pages d'affilée sans aucune annonce
                 # nouvelle = le reste est déjà connu (le passage complet du matin
@@ -327,6 +354,7 @@ async def crawl_source(ctx, src: dict, cfg: dict, seen: dict, full: bool, first_
                 pages_without_new = 0 if new_here else pages_without_new + 1
                 if not full and not first_time and pages_without_new >= 2:
                     res["stopped_early"] = True
+                    res["end"] = "incremental"
                     break
                 if src.get("page_param"):                     # pagination par paramètre d'URL
                     p = res["pages"] + 1
@@ -337,6 +365,7 @@ async def crawl_source(ctx, src: dict, cfg: dict, seen: dict, full: bool, first_
                     nxt = await next_page_url(page, visited)
                 if nxt:
                     if robots_allows(nxt) is False:
+                        res["end"] = "robots"
                         break
                     visited.add(nxt)
                     await page.goto(nxt, wait_until="domcontentloaded", timeout=45000)
@@ -345,16 +374,19 @@ async def crawl_source(ctx, src: dict, cfg: dict, seen: dict, full: bool, first_
                     # Pagination par boutons JavaScript (pas de lien) : on clique « suivant »
                     before = await page.evaluate(FIRST_LINKS_JS)
                     if not await page.evaluate(NEXT_BTN_JS, res["pages"] + 1):
+                        res["end"] = "no_next"                # plus de page suivante
                         break
                     await page.wait_for_timeout(1500)
                     await settle(page, scrolls=3)
                     if await page.evaluate(FIRST_LINKS_JS) == before:
+                        res["end"] = "same"                   # le bouton ne change plus la liste
                         break
         except Exception as e:
             # Une page qui plante en cours de route : on garde ce qui a été lu.
             if not cards:
                 raise
             res["status"] = "partial"
+            res["end"] = "error"
             res["error"] = f"{type(e).__name__}: {str(e)[:200]}"
         if res["pages"] <= 1:
             try:
@@ -382,7 +414,9 @@ async def read_detail(ctx, url: str) -> str | None:
         return None
     page = await ctx.new_page()
     try:
-        await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        resp = await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        if resp and resp.status >= 400:                     # page d'erreur : rien d'utile à lire
+            return None
         try:
             await page.wait_for_load_state("networkidle", timeout=8000)
         except Exception:
@@ -444,8 +478,9 @@ async def main():
                     if not card["weak"] and n_check <= int(pre.get("details_max_par_source", 40)):
                         detail_jobs.append(card)
                 new_cards.append(card)
-            rep = {k: r.get(k) for k in ("id", "name", "niveau", "status", "robots", "http", "url",
-                                         "resolved_url", "final_url", "title", "pages", "stopped_early", "error", "page_excerpt", "nav_hints")}
+            rep = {k: r.get(k) for k in ("id", "name", "niveau", "status", "robots", "http", "url", "resolved_url",
+                                         "final_url", "title", "pages", "end", "more_capped", "stopped_early", "error",
+                                         "page_excerpt", "nav_hints")}
             rep.update(cards=len(r["cards"]), new=n_new, new_check=n_check)
             report["sources"].append(rep)
 
@@ -470,6 +505,23 @@ async def main():
     (DATA / "index.json").write_text(json.dumps(
         {"at": now, "batches": sorted(f.name for f in batches.glob("*.json"))}, indent=1))
     (DATA / "run.json").write_text(json.dumps(report, ensure_ascii=False, indent=1))
+    if full and not only:
+        # Annonces visibles à ce passage, par source : sert à repérer celles qui ne sont plus en ligne.
+        # « complete » = source lue jusqu'au bout (sans erreur ni limite de pages atteinte).
+        live = {"at": now, "sources": {}}
+        for s, r in zip(sources, results):
+            # Prudence : on n'affirme qu'une annonce a disparu que si la liste a été lue jusqu'au bout.
+            # Exclus : pagination par paramètre d'URL (SPG, Rosset, portails : l'ordre varie d'une page
+            # à l'autre), fin de lecture forcée (limite de pages, « voir plus » encore présent, erreur),
+            # page unique qui montre pourtant une pagination, ou page unique très longue
+            # (défilement infini possible).
+            pager = r["pages"] <= 1 and any(PAGER_HINT.match(h.strip()) for h in r.get("nav_hints") or [])
+            complete = (r["status"] == "ok" and r["cards"] and not s.get("page_param")
+                        and r.get("end") in ("no_next", "empty", "same") and not r.get("more_capped")
+                        and not pager and (r["pages"] >= 2 or len(r["cards"]) < 30))
+            live["sources"][s["id"]] = {"complete": bool(complete),
+                                        "urls": sorted({live_key(c["href"]) for c in r["cards"] if not c.get("weak")})}
+        (DATA / "live.json").write_text(json.dumps(live, indent=0))
     seen_path.write_text(json.dumps(seen, indent=0))
     known.write_text(json.dumps(sorted(known_sources | {r["id"] for r in report["sources"] if r["cards"]})))
 
