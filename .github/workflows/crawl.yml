@@ -1,14 +1,12 @@
 name: crawl
 
 on:
-  # PHASE DE TEST : planification désactivée, lancement manuel uniquement.
-  # Pour activer, retirer les # des 4 lignes ci-dessous (heures UTC ;
-  # 6h40 UTC = 7h40 à Genève en hiver). Le passage de 6h40 relit tout,
-  # les deux autres ne cherchent que les nouveautés.
-  # schedule:
-  #   - cron: "40 6 * * *"
-  #   - cron: "40 11 * * *"
-  #   - cron: "40 17 * * *"
+  # Heures UTC : 6h40 / 11h40 / 17h40 = 7h40 / 12h40 / 18h40 à Genève en hiver.
+  # Le passage de 6h40 relit tout, les deux autres ne cherchent que les nouveautés.
+  schedule:
+    - cron: "40 6 * * *"
+    - cron: "40 11 * * *"
+    - cron: "40 17 * * *"
   workflow_dispatch:
     inputs:
       only:
