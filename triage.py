@@ -7,7 +7,7 @@ d'entrée, meublé / temporaire, puis classe en
   match  : tout ce qui est connu correspond
   check  : plausible mais une info manque ou déborde (loyer non indiqué,
            pièces non indiquées, total charges comprises jusqu'à +5 % au-dessus
-           du maximum, charges non indiquées avec un loyer à moins de 500 CHF du maximum…)
+           du maximum, charges non indiquées avec un loyer à plus de 4'000 (max − 200)…)
   out    : clairement hors critères (avec la raison)
 La date d'entrée ne change jamais le niveau : elle est seulement signalée.
 Un lieu non reconnu (ni code postal ni quartier de la zone) est écarté.
@@ -387,7 +387,7 @@ def classify(card: dict, crit: dict) -> dict:
             why_check.append(f"CHF {total} charges comprises, un peu au-dessus de {rmax}")
     elif rent > rmax * 1.05:
         why_out.append(f"loyer CHF {rent} sans les charges")
-    elif rent > rmax - 500:
+    elif rent > rmax - 200:                          # seuil choisi par Sébastien : loyer au-dessus de 4'000
         why_check.append(f"charges non indiquées (loyer CHF {rent})")
 
     if in_zone is False:
