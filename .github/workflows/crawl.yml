@@ -2,15 +2,23 @@ name: crawl
 
 on:
   # PHASE DE TEST : planification désactivée, lancement manuel uniquement.
-  # Pour activer 7h40 / 12h40 / 18h40 (heure de Genève en hiver), retirer les # :
+  # Pour activer, retirer les # des 4 lignes ci-dessous (heures UTC ;
+  # 6h40 UTC = 7h40 à Genève en hiver). Le passage de 6h40 relit tout,
+  # les deux autres ne cherchent que les nouveautés.
   # schedule:
-  #   - cron: "40 6,11,17 * * *"
+  #   - cron: "40 6 * * *"
+  #   - cron: "40 11 * * *"
+  #   - cron: "40 17 * * *"
   workflow_dispatch:
     inputs:
       only:
-        description: "ids de sources séparés par des espaces (vide = toutes)"
+        description: "ids de sources à tester, séparés par des espaces (vide = toutes)"
         required: false
         default: ""
+      full:
+        description: "relire toutes les pages (sinon : nouveautés seulement)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -33,6 +41,8 @@ jobs:
           pip install playwright==1.48.0 pyyaml==6.0.2
           python -m playwright install --with-deps chromium
       - name: Crawl
+        env:
+          FULL: ${{ (github.event.schedule == '40 6 * * *' || github.event.inputs.full == 'true') && '1' || '0' }}
         run: python crawl.py ${{ github.event.inputs.only }}
       - name: Commit results
         run: |
@@ -40,4 +50,5 @@ jobs:
           git config user.email "crawler-bot@users.noreply.github.com"
           git add data
           git diff --cached --quiet || git commit -m "crawl $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase --quiet || true
           git push
