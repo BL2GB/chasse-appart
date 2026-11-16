@@ -58,15 +58,18 @@ COOKIE_JS = r"""
 CARDS_JS = r"""
 () => {
   const out = [], seen = new Set();
-  for (const a of document.querySelectorAll('a[href]')) {
-    const href = a.href;
+  const here = location.href.split('#')[0];
+  const dataUrl = e => e && (e.getAttribute('data-href') || e.getAttribute('data-url') || e.getAttribute('data-link'));
+  const abs = u => { if (!u) return null; try { return new URL(u, location.href).href; } catch (e) { return null; } };
+  const nodes = document.querySelectorAll('a[href], [data-href], [data-url], [data-link]');
+  for (const a of nodes) {
+    let href = a.tagName === 'A' && a.getAttribute('href') !== null ? a.href : abs(dataUrl(a));
     if (!href || /^(javascript|mailto|tel):/.test(href)) continue;
     // On remonte jusqu'à un bloc assez grand pour être une fiche, sans jamais
     // englober un bloc qui contient des liens vers d'autres pages (= une liste).
     const base = href.split('#')[0];
     let el = a, txt = '';
     for (let i = 0; i < 7 && el; i++) {
-      const here = location.href.split('#')[0];
       const others = [...el.querySelectorAll('a[href]')].some(x => {
         const h = x.href.split('#')[0];
         return h !== base && h !== here && !/^(javascript|mailto|tel):/.test(x.href);
@@ -77,13 +80,28 @@ CARDS_JS = r"""
       el = el.parentElement;
     }
     if (txt.length < 40 || txt.length > 900) continue;
+    // Lien qui ramène à la page de liste (fiche ouverte en JavaScript) : on
+    // cherche une adresse dans les attributs data-* du bloc.
+    let weak = false;
+    if (base === here || href.split('?')[0] === here.split('?')[0]) {
+      const alt = el && (dataUrl(el) || dataUrl(el.querySelector('[data-href],[data-url],[data-link]')) ||
+                         dataUrl(el.closest('[data-href],[data-url],[data-link]')));
+      if (alt && abs(alt) !== here) href = abs(alt); else weak = true;
+    }
     const key = href.split('#')[0] + '|' + txt.slice(0, 80);
     if (seen.has(key)) continue;
     seen.add(key);
-    out.push({href, text: txt});
+    out.push({href, text: txt, weak});
   }
   return out;
 }
+"""
+
+# Indices de pagination (boutons visibles) pour diagnostiquer une source bloquée en page 1.
+NAV_HINTS_JS = r"""
+() => [...document.querySelectorAll('button, [role=button], nav a, [class*=pag] *, [class*=more] *')]
+  .filter(e => e.offsetParent !== null).map(e => (e.innerText || e.getAttribute('aria-label') || '').trim())
+  .filter(t => t && t.length < 40).slice(0, 40)
 """
 
 LINKS_JS = r"""
@@ -129,14 +147,21 @@ DETAIL_JS = r"""
 
 
 # ---------------------------------------------------------------- utilitaires
+NAV_PARAMS = re.compile(r"^(returnto|return|ref|referer|from|origin|back|page|p|sort|sortingfield|order|zoom|utm_.*|fbclid|gclid)$", re.I)
+
+
 def norm_url(u: str) -> str:
+    """URL sans les paramètres de navigation (retour à la page 2, tri, suivi…)."""
     s = urlsplit(u)
-    return urlunsplit((s.scheme, s.netloc.lower(), s.path.rstrip("/"), s.query, ""))
+    q = "&".join(kv for kv in s.query.split("&") if kv and not NAV_PARAMS.match(kv.split("=")[0]))
+    return urlunsplit((s.scheme, s.netloc.lower(), s.path.rstrip("/"), q, ""))
 
 
 def card_hash(src_id: str, card: dict) -> str:
-    digits = "".join(re.findall(r"\d", card["text"]))[:40]
-    return hashlib.sha1(f"{src_id}|{norm_url(card['href'])}|{digits}".encode()).hexdigest()[:16]
+    digits = "".join(re.findall(r"\d", re.sub(r"https?://\S+", "", card["text"])))[:40]
+    # Fiche sans lien propre : l'empreinte repose sur le texte seul.
+    url = "" if card.get("weak") else norm_url(card["href"])
+    return hashlib.sha1(f"{src_id}|{url}|{digits}|{card['text'][:60] if card.get('weak') else ''}".encode()).hexdigest()[:16]
 
 
 def prefilter(text: str, cfg: dict) -> str:
@@ -269,61 +294,73 @@ async def crawl_source(ctx, src: dict, cfg: dict, seen: dict, full: bool, first_
         max_pages = int(src.get("max_pages", 25))
         start_url = page.url
         pages_without_new = 0
-        while True:
-            res["pages"] += 1
-            # « voir plus » répété sur la même page
-            for _ in range(15):
-                before = await page.evaluate("() => document.body.innerText.length")
-                clicked = await page.evaluate(MORE_JS)
-                if not clicked:
+        try:
+            while True:
+                res["pages"] += 1
+                # « voir plus » répété sur la même page
+                for _ in range(15):
+                    before = await page.evaluate("() => document.body.innerText.length")
+                    clicked = await page.evaluate(MORE_JS)
+                    if not clicked:
+                        break
+                    await page.wait_for_timeout(1500)
+                    await settle(page, scrolls=2)
+                    if await page.evaluate("() => document.body.innerText.length") <= before:
+                        break
+                added = new_here = 0
+                for c in await page.evaluate(CARDS_JS):
+                    k = (c["text"][:120] if c.get("weak") else norm_url(c["href"])) + "|" + c["text"][:60]
+                    t = c["text"]
+                    if k not in keys and LISTING_HINT.search(t) and (PRICE_HINT.search(t) or ROOMS.search(t)):
+                        keys.add(k)
+                        cards.append(c)
+                        added += 1
+                        if card_hash(src["id"], c) not in seen:
+                            new_here += 1
+                if res["pages"] >= max_pages:
                     break
-                await page.wait_for_timeout(1500)
-                await settle(page, scrolls=2)
-                if await page.evaluate("() => document.body.innerText.length") <= before:
+                if res["pages"] > 1 and added == 0:          # la « page suivante » n'apporte rien
                     break
-            added = new_here = 0
-            for c in await page.evaluate(CARDS_JS):
-                k = c["href"].split("#")[0] + c["text"][:60]
-                t = c["text"]
-                if k not in keys and LISTING_HINT.search(t) and (PRICE_HINT.search(t) or ROOMS.search(t)):
-                    keys.add(k)
-                    cards.append(c)
-                    added += 1
-                    if card_hash(src["id"], c) not in seen:
-                        new_here += 1
-            if res["pages"] >= max_pages:
-                break
-            if res["pages"] > 1 and added == 0:          # la « page suivante » n'apporte rien
-                break
-            # Passage incrémental : deux pages d'affilée sans aucune annonce
-            # nouvelle = le reste est déjà connu (le passage complet du matin
-            # relit tout, pour les sites qui ne trient pas par date).
-            pages_without_new = 0 if new_here else pages_without_new + 1
-            if not full and not first_time and pages_without_new >= 2:
-                res["stopped_early"] = True
-                break
-            if src.get("page_param"):                     # pagination par paramètre d'URL
-                p = res["pages"] + 1
-                sep = "&" if "?" in start_url else "?"
-                nxt = re.sub(rf"([?&]){src['page_param']}=\d+", rf"\g<1>{src['page_param']}={p}", start_url) \
-                    if re.search(rf"[?&]{src['page_param']}=", start_url) else f"{start_url}{sep}{src['page_param']}={p}"
-            else:
-                nxt = await next_page_url(page, visited)
-            if nxt:
-                if robots_allows(nxt) is False:
+                # Passage incrémental : deux pages d'affilée sans aucune annonce
+                # nouvelle = le reste est déjà connu (le passage complet du matin
+                # relit tout, pour les sites qui ne trient pas par date).
+                pages_without_new = 0 if new_here else pages_without_new + 1
+                if not full and not first_time and pages_without_new >= 2:
+                    res["stopped_early"] = True
                     break
-                visited.add(nxt)
-                await page.goto(nxt, wait_until="domcontentloaded", timeout=45000)
-                await settle(page, scrolls=3)
-            else:
-                # Pagination par boutons JavaScript (pas de lien) : on clique « suivant »
-                before = await page.evaluate(FIRST_LINKS_JS)
-                if not await page.evaluate(NEXT_BTN_JS, res["pages"] + 1):
-                    break
-                await page.wait_for_timeout(1500)
-                await settle(page, scrolls=3)
-                if await page.evaluate(FIRST_LINKS_JS) == before:
-                    break
+                if src.get("page_param"):                     # pagination par paramètre d'URL
+                    p = res["pages"] + 1
+                    sep = "&" if "?" in start_url else "?"
+                    nxt = re.sub(rf"([?&]){src['page_param']}=\d+", rf"\g<1>{src['page_param']}={p}", start_url) \
+                        if re.search(rf"[?&]{src['page_param']}=", start_url) else f"{start_url}{sep}{src['page_param']}={p}"
+                else:
+                    nxt = await next_page_url(page, visited)
+                if nxt:
+                    if robots_allows(nxt) is False:
+                        break
+                    visited.add(nxt)
+                    await page.goto(nxt, wait_until="domcontentloaded", timeout=45000)
+                    await settle(page, scrolls=3)
+                else:
+                    # Pagination par boutons JavaScript (pas de lien) : on clique « suivant »
+                    before = await page.evaluate(FIRST_LINKS_JS)
+                    if not await page.evaluate(NEXT_BTN_JS, res["pages"] + 1):
+                        break
+                    await page.wait_for_timeout(1500)
+                    await settle(page, scrolls=3)
+                    if await page.evaluate(FIRST_LINKS_JS) == before:
+                        break
+        except Exception as e:
+            # Une page qui plante en cours de route : on garde ce qui a été lu.
+            if not cards:
+                raise
+            res["status"] = "partial"
+            res["error"] = f"{type(e).__name__}: {str(e)[:200]}"
+        if res["pages"] <= 1:
+            try:
+                res["nav_hints"] = await page.evaluate(NAV_HINTS_JS)
+            except Exception:
+                pass
 
         res["final_url"] = page.url
         res["title"] = await page.title()
@@ -379,7 +416,8 @@ async def main():
 
     async with async_playwright() as p:
         browser = await p.chromium.launch()
-        ctx = await browser.new_context(user_agent=UA, locale="fr-CH", viewport={"width": 1366, "height": 900})
+        ctx = await browser.new_context(user_agent=UA, locale="fr-CH", viewport={"width": 1366, "height": 900},
+                                        ignore_https_errors=True)   # certificats mal configurés chez certaines régies
         sem = asyncio.Semaphore(4)
 
         async def run(s):
@@ -399,14 +437,15 @@ async def main():
                 seen[h] = now
                 n_new += 1
                 card = {"hash": h, "source_id": s["id"], "source": s["name"], "kind": s["kind"],
-                        "href": c["href"], "text": c["text"], "pre": prefilter(c["text"], pre)}
+                        "href": c["href"], "text": c["text"], "pre": prefilter(c["text"], pre),
+                        "weak": bool(c.get("weak"))}
                 if card["pre"] == "check":
                     n_check += 1
-                    if n_check <= int(pre.get("details_max_par_source", 40)):
+                    if not card["weak"] and n_check <= int(pre.get("details_max_par_source", 40)):
                         detail_jobs.append(card)
                 new_cards.append(card)
             rep = {k: r.get(k) for k in ("id", "name", "niveau", "status", "robots", "http", "url",
-                                         "resolved_url", "final_url", "title", "pages", "stopped_early", "error", "page_excerpt")}
+                                         "resolved_url", "final_url", "title", "pages", "stopped_early", "error", "page_excerpt", "nav_hints")}
             rep.update(cards=len(r["cards"]), new=n_new, new_check=n_check)
             report["sources"].append(rep)
 

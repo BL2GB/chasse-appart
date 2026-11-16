@@ -176,7 +176,9 @@ def classify(card: dict, crit: dict) -> dict:
     # La fiche courte d'abord : la page détaillée cite souvent d'autres biens.
     in_zone, zone_hit = zone_check(f"{text} {card.get('href', '')}", crit.get("zones", []))
     if in_zone is None:
-        in_zone, zone_hit = zone_check(blob, crit.get("zones", []))
+        # Seulement le haut de la fiche détaillée : plus bas, on trouve
+        # l'adresse de l'agence ou d'autres biens.
+        in_zone, zone_hit = zone_check(detail[:600], crit.get("zones", []))
     # Une date égale ou proche d'aujourd'hui = date d'affichage ou « de suite ».
     if avail and (avail - date.today()).days <= 7:
         avail, soon = None, "immediate"
@@ -222,7 +224,7 @@ def classify(card: dict, crit: dict) -> dict:
     if in_zone is False:
         reasons_out.append(f"hors zone ({zone_hit})")
     elif in_zone is None:
-        reasons_check.append("quartier à confirmer")
+        reasons_out.append("lieu non reconnu (ni Genève, ni Carouge, ni Acacias)")
 
     # Fenêtre d'entrée : indicative, ne change jamais le niveau, juste une mention.
     lo, hi = month_bounds(crit.get("entry_from")), month_bounds(crit.get("entry_to"), end=True)
