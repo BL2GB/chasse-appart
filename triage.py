@@ -41,7 +41,8 @@ OTHER_PLACES = ["lancy", "grand-lancy", "petit-lancy", "meyrin", "vernier", "one
 NOT_HOUSING = re.compile(r"\b(parking|place de parc|place intérieure|garage|box|bureau|arcade|dépôt|depot|"
                          r"local commercial|surface commerciale|entrepôt|cave|à vendre|prix de vente|"
                          r"tiefgarage|parkplatz|chalet|bureaux|cabinet|enseigne|espace professionnel|espace polyvalent|"
-                         r"atelier|commercial)\b", re.I)
+                         r"atelier|commercial|locaux|commerce|industrie|studios?|colocation)\b|"
+                         r"/\s*m[²2]\s*/\s*an", re.I)
 
 
 def norm(s: str) -> str:
@@ -191,7 +192,7 @@ def classify(card: dict, crit: dict) -> dict:
         reasons_out.append("pas un logement")
     t_rent, _, t_req = parse_money(text)
     t_rooms, t_beds = parse_rooms(text)
-    if re.search(r"\d+\s*/\s*\d+\s*biens|Tri\s*:|awswaf", text):
+    if re.search(r"\d+\s*/\s*\d+\s*biens|Tri\s*:|awswaf|\d+ appartements de \d", text):
         reasons_out.append("fiche illisible")
     elif t_rent is None and t_rooms is None and t_beds is None and not t_req \
             and not re.search(r"pi[eè]ces?|appartement|logement|attique|duplex", text, re.I):

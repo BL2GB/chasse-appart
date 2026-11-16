@@ -20,7 +20,7 @@ prefiltre:
 
 regies:
   # --- niveau 1 : annonces dans la page
-  - {id: spg, name: SPG, url: "https://www.spg.ch/location/?city=Gen%C3%A8ve%2C+Suisse&radius=10&lat=46.2043907&lng=6.1431577", niveau: 1}
+  - {id: spg, name: SPG, url: "https://www.spg.ch/location/", page_param: page, max_pages: 30, niveau: 1}   # ~300 biens, 14/page, sans filtre de prix (le tri suit les critères du tableau de bord)
   - {id: rosset, name: Rosset & Cie, url: "https://www.rosset.ch/louer", page_param: page, max_pages: 10, niveau: 1}
   - {id: comptoir-immo, name: Comptoir Immobilier, url: "https://comptoir-immo.ch/location/appartement", niveau: 1}
   - {id: moser-vernet, name: Moser Vernet, url: "https://www.moservernet.ch/louer/appartements-geneve/", niveau: 1}
