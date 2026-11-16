@@ -17,7 +17,7 @@ Sorties dans data/ :
   index.json           liste des lots (lisible sans API GitHub)
   run.json             état de chaque source au dernier passage
 """
-import asyncio, hashlib, json, re, sys, time
+import asyncio, hashlib, json, os, re, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
@@ -100,6 +100,24 @@ MORE_JS = r"""
   }
   return null;
 }
+"""
+
+# Bouton « suivant » ou numéro de page sans lien (pagination en JavaScript).
+NEXT_BTN_JS = r"""
+(n) => {
+  const els = [...document.querySelectorAll('button, [role=button], li, span, a:not([href]), a[href="#"], a[href^="javascript"]')];
+  const vis = e => e.offsetParent !== null && !e.disabled && !/disabled/.test(e.className || '');
+  const lbl = e => ((e.innerText || '') + ' ' + (e.getAttribute('aria-label') || '')).trim();
+  let t = els.find(e => vis(e) && /^(suivant|suivante|page suivante|next|weiter|›|»|>|→)$/i.test(lbl(e)))
+       || els.find(e => vis(e) && lbl(e) === String(n) && e.children.length <= 1);
+  if (!t) return false;
+  t.scrollIntoView(); t.click(); return true;
+}
+"""
+
+FIRST_LINKS_JS = r"""
+() => [...document.querySelectorAll('a[href]')].slice(0, 400).map(a => a.href).join('|').length + ':' +
+      [...document.querySelectorAll('a[href]')].map(a => a.href).filter(h => /\d{3,}/.test(h)).slice(0, 5).join('|')
 """
 
 DETAIL_JS = r"""
@@ -216,7 +234,7 @@ async def next_page_url(page, visited: set):
 
 
 # ---------------------------------------------------------------- une source
-async def crawl_source(ctx, src: dict, cfg: dict):
+async def crawl_source(ctx, src: dict, cfg: dict, seen: dict, full: bool, first_time: bool):
     page = await ctx.new_page()
     res = {"id": src["id"], "name": src["name"], "niveau": src.get("niveau"), "url": src["url"],
            "status": "ok", "cards": [], "pages": 0}
@@ -249,6 +267,8 @@ async def crawl_source(ctx, src: dict, cfg: dict):
 
         cards, keys, visited = [], set(), {page.url.split("#")[0]}
         max_pages = int(src.get("max_pages", 25))
+        start_url = page.url
+        pages_without_new = 0
         while True:
             res["pages"] += 1
             # « voir plus » répété sur la même page
@@ -261,20 +281,49 @@ async def crawl_source(ctx, src: dict, cfg: dict):
                 await settle(page, scrolls=2)
                 if await page.evaluate("() => document.body.innerText.length") <= before:
                     break
+            added = new_here = 0
             for c in await page.evaluate(CARDS_JS):
                 k = c["href"].split("#")[0] + c["text"][:60]
                 t = c["text"]
                 if k not in keys and LISTING_HINT.search(t) and (PRICE_HINT.search(t) or ROOMS.search(t)):
                     keys.add(k)
                     cards.append(c)
+                    added += 1
+                    if card_hash(src["id"], c) not in seen:
+                        new_here += 1
             if res["pages"] >= max_pages:
                 break
-            nxt = await next_page_url(page, visited)
-            if not nxt or robots_allows(nxt) is False:
+            if res["pages"] > 1 and added == 0:          # la « page suivante » n'apporte rien
                 break
-            visited.add(nxt)
-            await page.goto(nxt, wait_until="domcontentloaded", timeout=45000)
-            await settle(page, scrolls=3)
+            # Passage incrémental : deux pages d'affilée sans aucune annonce
+            # nouvelle = le reste est déjà connu (le passage complet du matin
+            # relit tout, pour les sites qui ne trient pas par date).
+            pages_without_new = 0 if new_here else pages_without_new + 1
+            if not full and not first_time and pages_without_new >= 2:
+                res["stopped_early"] = True
+                break
+            if src.get("page_param"):                     # pagination par paramètre d'URL
+                p = res["pages"] + 1
+                sep = "&" if "?" in start_url else "?"
+                nxt = re.sub(rf"([?&]){src['page_param']}=\d+", rf"\g<1>{src['page_param']}={p}", start_url) \
+                    if re.search(rf"[?&]{src['page_param']}=", start_url) else f"{start_url}{sep}{src['page_param']}={p}"
+            else:
+                nxt = await next_page_url(page, visited)
+            if nxt:
+                if robots_allows(nxt) is False:
+                    break
+                visited.add(nxt)
+                await page.goto(nxt, wait_until="domcontentloaded", timeout=45000)
+                await settle(page, scrolls=3)
+            else:
+                # Pagination par boutons JavaScript (pas de lien) : on clique « suivant »
+                before = await page.evaluate(FIRST_LINKS_JS)
+                if not await page.evaluate(NEXT_BTN_JS, res["pages"] + 1):
+                    break
+                await page.wait_for_timeout(1500)
+                await settle(page, scrolls=3)
+                if await page.evaluate(FIRST_LINKS_JS) == before:
+                    break
 
         res["final_url"] = page.url
         res["title"] = await page.title()
@@ -314,7 +363,9 @@ async def main():
     pre = conf.get("prefiltre", {})
     sources = [dict(s, kind="regie") for s in conf.get("regies", [])] + \
               [dict(s, kind="portail") for s in conf.get("portails", [])]
-    only = set(a for a in sys.argv[1:] if a.strip())
+    args = [a for a in sys.argv[1:] if a.strip()]
+    full = "--full" in args or os.environ.get("FULL") == "1"
+    only = set(a for a in args if not a.startswith("--"))
     if only:
         sources = [s for s in sources if s["id"] in only]
 
@@ -322,6 +373,8 @@ async def main():
     seen_path = DATA / "seen.json"
     seen = json.loads(seen_path.read_text()) if seen_path.exists() else {}
     first_run = not seen
+    known = DATA / "sources_vues.json"
+    known_sources = set(json.loads(known.read_text())) if known.exists() else set()
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
     async with async_playwright() as p:
@@ -331,10 +384,11 @@ async def main():
 
         async def run(s):
             async with sem:
-                return await crawl_source(ctx, s, pre)
+                first_time = s["id"] not in known_sources
+                return await crawl_source(ctx, s, pre, seen, full, first_time)
         results = await asyncio.gather(*(run(s) for s in sources))
 
-        new_cards, report = [], {"at": now, "first_run": first_run, "sources": []}
+        new_cards, report = [], {"at": now, "first_run": first_run, "full": full, "sources": []}
         detail_jobs = []
         for s, r in zip(sources, results):
             n_new = n_check = 0
@@ -352,7 +406,7 @@ async def main():
                         detail_jobs.append(card)
                 new_cards.append(card)
             rep = {k: r.get(k) for k in ("id", "name", "niveau", "status", "robots", "http", "url",
-                                         "resolved_url", "final_url", "title", "pages", "error", "page_excerpt")}
+                                         "resolved_url", "final_url", "title", "pages", "stopped_early", "error", "page_excerpt")}
             rep.update(cards=len(r["cards"]), new=n_new, new_check=n_check)
             report["sources"].append(rep)
 
@@ -378,6 +432,7 @@ async def main():
         {"at": now, "batches": sorted(f.name for f in batches.glob("*.json"))}, indent=1))
     (DATA / "run.json").write_text(json.dumps(report, ensure_ascii=False, indent=1))
     seen_path.write_text(json.dumps(seen, indent=0))
+    known.write_text(json.dumps(sorted(known_sources | {r["id"] for r in report["sources"] if r["cards"]})))
 
     for r in report["sources"]:
         print(f"{r['id']:<22} {r['status']:<18} pages={r['pages']:<3} fiches={r['cards']:<4} "

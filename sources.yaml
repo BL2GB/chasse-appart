@@ -5,6 +5,9 @@
 # max_pages : nombre max de pages de résultats suivies (défaut 25)
 # niveau    : 1 = annonces lisibles dans la page ; 2 = chargées en JavaScript ;
 #             3 = non lisibles par l'outil de lecture de Claude (à confirmer au test)
+# page_param : pagination par paramètre d'URL (ex. ?page=2) quand il n'y a pas de lien « suivant »
+# Retirés après le test du 16.11 : Coverim, Savioz (domaine inexistant), Forum (injoignable),
+# Alain Bordier (renvoie vers Bordier & Schmidhauser), Simonin (= gerances.ch, déjà relevé).
 # Le robot vérifie le robots.txt de chaque site à chaque passage et saute
 # les pages interdites (statut « robots_disallow » dans data/run.json).
 
@@ -17,8 +20,8 @@ prefiltre:
 
 regies:
   # --- niveau 1 : annonces dans la page
-  - {id: spg, name: SPG, url: "https://www.spg.ch/location/", niveau: 1}
-  - {id: rosset, name: Rosset & Cie, url: "https://www.rosset.ch/louer", niveau: 1}
+  - {id: spg, name: SPG, url: "https://www.spg.ch/location/?city=Gen%C3%A8ve%2C+Suisse&radius=10&lat=46.2043907&lng=6.1431577", niveau: 1}
+  - {id: rosset, name: Rosset & Cie, url: "https://www.rosset.ch/louer", page_param: page, max_pages: 10, niveau: 1}
   - {id: comptoir-immo, name: Comptoir Immobilier, url: "https://comptoir-immo.ch/location/appartement", niveau: 1}
   - {id: moser-vernet, name: Moser Vernet, url: "https://www.moservernet.ch/louer/appartements-geneve/", niveau: 1}
   - {id: bory, name: Bory & Cie, url: "https://www.bory.ch/louer", niveau: 1}
@@ -39,7 +42,7 @@ regies:
   - {id: argecil, name: Argécil, url: "https://argecil.ch/achats-locations/", niveau: 1}
   - {id: nettilac, name: Nettilac (meublés), url: "https://nettilac.ch/", niveau: 1}
   - {id: nettilac-nm, name: Nettilac (non meublés), url: "https://nettilac.ch/immobilier/Index/Fr/Logements_non_meubles/", niveau: 1}
-  - {id: vimova, name: Vimova (ex-Brolliet), url: "https://vimova.ch/fr/louer/", niveau: 1}
+  - {id: vimova, name: Vimova (ex-Brolliet), url: "https://vimova.ch/fr/louer/", max_pages: 60, niveau: 1}   # national, 6 biens/page
   - {id: regie-fonciere, name: Régie Foncière, url: "https://regiefonciere.ch/fr/locataires-location-louer", niveau: 1}
   - {id: ville-geneve, name: Ville de Genève (GIM), url: "https://www.geneve.ch/themes/logement-finances-vie-economique/portail-location-gerance-immobiliere-municipale", niveau: 1}
   - {id: progrimm, name: Progrimm, url: "https://progrimm.com/louer", niveau: 1}
@@ -47,37 +50,32 @@ regies:
   # --- niveau 2 : annonces chargées en JavaScript (navigateur headless)
   - {id: pilet-renaud, name: Pilet & Renaud, url: "https://www.pilet-renaud.ch/fr/louer/appartements", niveau: 2}
   - {id: bersier, name: Bersier, url: "https://www.bersiersa.ch/", niveau: 2}
-  - {id: privera, name: Privera, url: "https://www.privera.ch/fr/offres-immobilieres/annonces", niveau: 2}
+  - {id: privera, name: Privera, url: "https://www.privera.ch/immobilienangebote/inserate", niveau: 2}
   - {id: livit, name: Livit, url: "https://www.livit.ch/fr/search/residential", niveau: 2}
   - {id: agci, name: AGCI Immobilier, url: "https://agci.ch/fr/locations", niveau: 2}
   - {id: befi, name: BEFI, url: "https://befi.realforce.ch/rental-listings", niveau: 2}
   - {id: cogerim, name: Cogerim, url: "https://cogerim.ch/rental-listings/", niveau: 2}
   - {id: brun, name: Régie Brun, url: "https://www.regiebrun.ch/louer/", niveau: 2}
   - {id: grange, name: Grange & Cie, url: "https://www.grange.ch", discover: true, niveau: 2}
-  - {id: bernard-nicod, name: Bernard Nicod, url: "https://www.bernard-nicod.ch", discover: true, niveau: 2}
+  - {id: bernard-nicod, name: Bernard Nicod, url: "https://www.bernard-nicod.ch/fr/recherche/residentiel/location", niveau: 2}
 
   # --- niveau 3 : refusés par l'outil de lecture de Claude ; leur robots.txt
   #     (vérifié pour Naef et Gerofinance) n'interdit pas les pages d'annonces.
   - {id: naef, name: Naef Immobilier, url: "https://www.naef.ch/louer/", niveau: 3}
-  - {id: gerofinance, name: Gerofinance / Régie du Rhône, url: "https://www.gerofinance.ch", discover: true, niveau: 3}
-  - {id: cgi, name: CGi Immobilier, url: "https://www.cgi.ch", discover: true, niveau: 3}
-  - {id: dunand, name: Dunand & Cie, url: "https://www.dunand.ch", discover: true, niveau: 3}
-  - {id: schmid, name: Régie Schmid, url: "https://www.regie-schmid.ch", discover: true, niveau: 3}
-  - {id: coverim, name: Coverim, url: "https://www.coverim.ch", discover: true, niveau: 3}
-  - {id: bordier, name: Alain Bordier & Cie, url: "https://www.abordier.ch", discover: true, niveau: 3}
-  - {id: simonin, name: Simonin / Gérances, url: "https://www.gerances.ch", discover: true, niveau: 3}
-  - {id: psp, name: PSP Management, url: "https://www.psp-swissproperty.ch", discover: true, niveau: 3}
-  - {id: imelsa, name: Imelsa, url: "https://www.imelsa.ch", discover: true, niveau: 3}
+  - {id: gerofinance, name: Gerofinance / Régie du Rhône, url: "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11", max_pages: 20, niveau: 3}
+  - {id: cgi, name: CGi / Gérances (Simonin), url: "https://www.gerances.ch/a-louer", niveau: 3}
+  - {id: dunand, name: Dunand & Cie, url: "https://dunand.ch", discover: true, niveau: 3}
+  - {id: schmid, name: Régie Schmid, url: "https://regie-schmid.ch/rental-listings/", niveau: 3}
+  - {id: psp, name: PSP Management, url: "https://psp-swissproperty.ch", discover: true, niveau: 3}
+  - {id: imelsa, name: Imelsa, url: "https://imelsa.ch", discover: true, niveau: 3}
   - {id: burhone, name: Burhône, url: "https://www.burhone.ch", discover: true, niveau: 3}
-  - {id: forum, name: Forum Immobilier, url: "https://www.forum-immobilier.ch", discover: true, niveau: 3}
-  - {id: savioz, name: Savioz Immobilier, url: "https://www.saviozimmo.ch", discover: true, niveau: 3}
-  - {id: schmidhauser, name: Schmidhauser & Cie, url: "https://www.schmidhauser-immo.ch", discover: true, niveau: 3}
-  - {id: davel, name: Davel Immobilier, url: "https://www.davelimmobilier.ch", discover: true, niveau: 3}
-  - {id: regisseurs, name: Les Régisseurs Associés, url: "https://www.regisseurs.ch", discover: true, niveau: 3}
+  - {id: schmidhauser, name: Schmidhauser & Cie, url: "https://schmidhauser-immo.ch", discover: true, niveau: 3}
+  - {id: davel, name: Davel Immobilier, url: "https://davelimmobilier.ch/locations/", niveau: 3}
+  - {id: regisseurs, name: Les Régisseurs Associés, url: "https://www.regisseurs.ch/louer/", niveau: 3}
   - {id: barde, name: Barde & Cie, url: "https://www.bardecie.ch/immobilier", niveau: 3}
 
 portails:
   - {id: immobilier-carouge, name: immobilier.ch (Carouge), url: "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-1?clrs=1", niveau: 1}
-  - {id: immobilier-geneve, name: immobilier.ch (Genève), url: "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1", niveau: 1}
+  - {id: immobilier-geneve, name: immobilier.ch (Genève), url: "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1", max_pages: 40, niveau: 1}
   - {id: flatfox, name: Flatfox, url: "https://flatfox.ch/fr/search/?east=6.185&north=46.225&south=46.170&west=6.105&object_category=APARTMENT&offer_type=RENT", niveau: 2}
   - {id: homegate, name: Homegate, url: "https://www.homegate.ch/louer/appartement/lieu-carouge-ge/liste-annonces", niveau: 2}
