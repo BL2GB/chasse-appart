@@ -1,11 +1,12 @@
 name: crawl
 
 on:
-  # Toutes les 2 heures (UTC), à :17 pour éviter l'heure pile où GitHub retarde le plus.
-  # GitHub peut retarder ou sauter un passage planifié : avec un passage toutes les 2 h, un raté
-  # ne coûte que 2 h. Le robot relit tout quand le dernier passage complet date de plus de 20 h.
+  # Les passages de jour sont lancés par cron-job.org (workflow_dispatch) :
+  # 9 h 10, 11 h 10, 13 h 10, 15 h 10, 17 h 10 et 19 h 10, heure de Genève (8,10,…,18 h 10 UTC).
+  # Ce planning GitHub n'est qu'un filet de sécurité : un passage par nuit, à 3 h 17 UTC.
+  # Le robot relit tout quand le dernier passage complet date de plus de 20 h.
   schedule:
-    - cron: "17 */2 * * *"
+    - cron: "17 3 * * *"
   workflow_dispatch:
     inputs:
       only:
