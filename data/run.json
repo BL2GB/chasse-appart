@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T21:13:03+00:00",
+ "at": "2026-11-17T01:02:31+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -14,16 +14,16 @@
    "resolved_url": null,
    "final_url": "https://www.spg.ch/location/",
    "title": "Location - SPG",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 28,
-   "new": 2,
-   "new_check": 2
+   "cards": 23,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "rosset",
@@ -34,18 +34,18 @@
    "http": 200,
    "url": "https://www.rosset.ch/louer",
    "resolved_url": null,
-   "final_url": "https://www.rosset.ch/louer?page=3",
+   "final_url": "https://www.rosset.ch/louer?page=4",
    "title": "Biens à louer | Rosset",
-   "pages": 3,
+   "pages": 4,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 72,
-   "new": 1,
-   "new_check": 0
+   "cards": 96,
+   "new": 2,
+   "new_check": 2
   },
   {
    "id": "comptoir-immo",
@@ -56,18 +56,18 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 72,
-   "new": 3,
-   "new_check": 3
+   "cards": 48,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "moser-vernet",
@@ -129,8 +129,8 @@
     "2"
    ],
    "cards": 37,
-   "new": 4,
-   "new_check": 4
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bory",
@@ -192,8 +192,8 @@
     "Acheter"
    ],
    "cards": 20,
-   "new": 5,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "burger",
@@ -217,7 +217,7 @@
     "J'ai compris"
    ],
    "cards": 36,
-   "new": 1,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -279,7 +279,7 @@
     "Promotions",
     "Mise en valeur & financement"
    ],
-   "cards": 28,
+   "cards": 27,
    "new": 0,
    "new_check": 0
   },
@@ -343,7 +343,7 @@
     "LIRE LA SUITE"
    ],
    "cards": 16,
-   "new": 1,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -484,15 +484,15 @@
    "final_url": "https://fm-management.ch/rental-listings/page/2/",
    "title": "Biens à la location - Page 2 sur 2 - FM Management",
    "pages": 2,
-   "end": "no_next",
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
    "cards": 30,
-   "new": 3,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "besuchet",
@@ -598,8 +598,8 @@
    "page_excerpt": null,
    "nav_hints": null,
    "cards": 37,
-   "new": 2,
-   "new_check": 2
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "vpi",
@@ -632,7 +632,7 @@
     "Zoom out"
    ],
    "cards": 28,
-   "new": 1,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -797,8 +797,8 @@
     "Page dot 3"
    ],
    "cards": 51,
-   "new": 51,
-   "new_check": 24
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "regie-centre",
@@ -809,17 +809,17 @@
    "http": 200,
    "url": "https://regieducentre.ch/locations/",
    "resolved_url": null,
-   "final_url": "https://regieducentre.ch/locations/page/3/",
+   "final_url": "https://regieducentre.ch/locations/page/2/",
    "title": "Régie du Centre - Locations",
-   "pages": 3,
-   "end": "empty",
+   "pages": 2,
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
    "cards": 6,
-   "new": 1,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -882,8 +882,8 @@
     "Achats & Locations"
    ],
    "cards": 7,
-   "new": 3,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "nettilac",
@@ -907,7 +907,7 @@
     "−"
    ],
    "cards": 25,
-   "new": 1,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -944,18 +944,18 @@
    "http": 200,
    "url": "https://vimova.ch/fr/louer/",
    "resolved_url": null,
-   "final_url": "https://vimova.ch/fr/louer/page/13/",
+   "final_url": "https://vimova.ch/fr/louer/page/2/",
    "title": "Maison, studio ou appartement à louer en Suisse | Vimova",
-   "pages": 13,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 72,
-   "new": 24,
-   "new_check": 5
+   "cards": 12,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "regie-fonciere",
@@ -1102,8 +1102,8 @@
     "m2"
    ],
    "cards": 2,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "pilet-renaud",
@@ -1165,8 +1165,8 @@
     "Nos valeurs"
    ],
    "cards": 36,
-   "new": 3,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bersier",
@@ -1467,18 +1467,18 @@
    "http": 200,
    "url": "https://www.naef.ch/louer/",
    "resolved_url": null,
-   "final_url": "https://www.naef.ch/louer/appartements-maisons/page-3/?sortingField=prix_desc&zoom=8",
+   "final_url": "https://www.naef.ch/louer/appartements-maisons/page-2/?sortingField=prix_desc&zoom=8",
    "title": "Location Appartements et Maisons en Suisse | Appartements et Maisons à Louer | Naef Immobilier",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 53,
-   "new": 2,
-   "new_check": 2
+   "cards": 33,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "gerofinance",
@@ -1489,18 +1489,18 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=3",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 3",
-   "pages": 3,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 33,
-   "new": 2,
-   "new_check": 1
+   "cards": 22,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "cgi",
@@ -1511,17 +1511,17 @@
    "http": 200,
    "url": "https://www.gerances.ch/a-louer",
    "resolved_url": null,
-   "final_url": "https://www.gerances.ch/a-louer/page/3",
-   "title": "À Louer – Page 3 – GPF Gestion de Patrimoine Foncier SA | Votre agence immobilière à Genève",
-   "pages": 3,
+   "final_url": "https://www.gerances.ch/a-louer/page/2",
+   "title": "À Louer – Page 2 – GPF Gestion de Patrimoine Foncier SA | Votre agence immobilière à Genève",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 36,
-   "new": 1,
+   "cards": 24,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -1938,26 +1938,26 @@
     "Linkedin",
     "Linkedin",
     "Linkedin",
-    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
-    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
-    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
+    "À louer\nÀ vendre\nLoué\nVendu",
+    "À louer\nÀ vendre\nLoué\nVendu",
     "À louer\nÀ vendre\nLoué\nVendu",
     "À louer",
     "À vendre",
     "Loué",
     "Vendu",
-    "Status",
-    "Status",
-    "Status",
-    "Status",
     "Commercial",
     "- Office",
     "- Shop",
     "Residential",
-    "- Apartment"
+    "- Apartment",
+    "- Condo",
+    "- Single Family Home",
+    "- Studio",
+    "- Villa",
+    "All Cities\n1234\nGeneva\nGenève"
    ],
    "cards": 6,
-   "new": 0,
+   "new": 1,
    "new_check": 0
   },
   {
@@ -2855,8 +2855,8 @@
    "http": 202,
    "url": "https://www.immobilier.ch/fr/carte/agence/gerard-baezner-cie-17/louer/page-1?gr=1&clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/agence/gerard-baezner-cie-17/louer/appartement/geneve/anieres/appartement-4-pieces-dernier-etage-1609214",
-   "title": "Appartement 4 pces 128 m2 à louer à Anières | CHF 3'595.-/mois",
+   "final_url": "https://www.immobilier.ch/fr/agence/gerard-baezner-cie-17/louer/appartement/geneve/geneve/5-pieces-traversant-coeur-champel-1602897",
+   "title": "Appartement 5 pces 159 m2 à louer à Genève | CHF 5'400.-/mois",
    "pages": 2,
    "end": "same",
    "more_capped": null,
@@ -2877,18 +2877,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/for-u-relocation-sarl-810/divers-appartements-meubles-residence-carouge-286438",
-   "title": "Appartement meublé 2 pces à louer à Carouge GE | CHF 2'500.-/mois",
-   "pages": 3,
-   "end": "same",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-2?t=rent&c=1&p=c9611&nb=false&gr=1",
+   "title": "Page 2 appartements à louer à Carouge GE (GE)",
+   "pages": 2,
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 41,
-   "new": 5,
-   "new_check": 2
+   "cards": 37,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "immobilier-geneve",
@@ -2899,18 +2899,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-29?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 29 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 29,
-   "end": "no_next",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-2?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 2 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 2,
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 731,
-   "new": 89,
-   "new_check": 61
+   "cards": 61,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "flatfox",
@@ -2921,7 +2921,7 @@
    "http": 200,
    "url": "https://flatfox.ch/fr/search/?east=6.185&north=46.225&south=46.170&west=6.105&object_category=APARTMENT&offer_type=RENT",
    "resolved_url": null,
-   "final_url": "https://flatfox.ch/fr/search/?east=6.185000&north=46.238434&object_category=APARTMENT&offer_type=RENT&south=46.156549&take=240&west=6.105000",
+   "final_url": "https://flatfox.ch/fr/search/?east=6.185000&north=46.238434&object_category=APARTMENT&offer_type=RENT&south=46.156549&take=432&west=6.105000",
    "title": "Appartement à louer en Suisse - Flatfox",
    "pages": 1,
    "end": "no_next",
@@ -2947,12 +2947,12 @@
     "Alertes e-mail",
     "Zoom in",
     "Zoom out",
-    "Afficher plus",
+    "S'abonner",
     "Gérer mes préférences"
    ],
-   "cards": 192,
-   "new": 28,
-   "new_check": 16
+   "cards": 400,
+   "new": 4,
+   "new_check": 1
   },
   {
    "id": "homegate",
