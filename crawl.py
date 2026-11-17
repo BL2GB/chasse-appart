@@ -435,8 +435,16 @@ async def main():
     sources = [dict(s, kind="regie") for s in conf.get("regies", [])] + \
               [dict(s, kind="portail") for s in conf.get("portails", [])]
     args = [a for a in sys.argv[1:] if a.strip()]
-    full = "--full" in args or os.environ.get("FULL") == "1"
     only = set(a for a in args if not a.startswith("--"))
+    # Passage complet : demandé, ou le dernier passage complet date de plus de 20 h (GitHub retarde
+    # ou saute parfois les passages planifiés : on ne dépend donc pas d'une heure précise).
+    full = "--full" in args or os.environ.get("FULL") == "1"
+    if not full and not only:
+        try:
+            last_full = datetime.fromisoformat(json.loads((DATA / "live.json").read_text())["at"])
+            full = (datetime.now(timezone.utc) - last_full).total_seconds() > 20 * 3600
+        except Exception:
+            full = True
     if only:
         sources = [s for s in sources if s["id"] in only]
 
