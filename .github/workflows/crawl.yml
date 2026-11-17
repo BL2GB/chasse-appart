@@ -1,12 +1,11 @@
 name: crawl
 
 on:
-  # Heures UTC : 6h40 / 11h40 / 17h40 = 7h40 / 12h40 / 18h40 à Genève en hiver.
-  # Le passage de 6h40 relit tout, les deux autres ne cherchent que les nouveautés.
+  # Toutes les 2 heures (UTC), à :17 pour éviter l'heure pile où GitHub retarde le plus.
+  # GitHub peut retarder ou sauter un passage planifié : avec un passage toutes les 2 h, un raté
+  # ne coûte que 2 h. Le robot relit tout quand le dernier passage complet date de plus de 20 h.
   schedule:
-    - cron: "40 6 * * *"
-    - cron: "40 11 * * *"
-    - cron: "40 17 * * *"
+    - cron: "17 */2 * * *"
   workflow_dispatch:
     inputs:
       only:
@@ -40,7 +39,7 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Crawl
         env:
-          FULL: ${{ (github.event.schedule == '40 6 * * *' || github.event.inputs.full == 'true') && '1' || '0' }}
+          FULL: ${{ github.event.inputs.full == 'true' && '1' || '0' }}
         run: python crawl.py ${{ github.event.inputs.only }}
       - name: Commit results
         run: |
