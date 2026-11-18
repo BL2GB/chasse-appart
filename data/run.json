@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T14:10:58+00:00",
+ "at": "2026-11-18T16:11:01+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -14,16 +14,16 @@
    "resolved_url": null,
    "final_url": "https://www.spg.ch/location/",
    "title": "Location - SPG",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 20,
-   "new": 0,
-   "new_check": 0
+   "cards": 30,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "rosset",
@@ -56,30 +56,8 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 3,
-   "end": "incremental",
-   "more_capped": null,
-   "stopped_early": true,
-   "error": null,
-   "page_excerpt": null,
-   "nav_hints": null,
-   "cards": 72,
-   "new": 2,
-   "new_check": 1
-  },
-  {
-   "id": "moser-vernet",
-   "name": "Moser Vernet",
-   "niveau": 1,
-   "status": "ok",
-   "robots": "ok",
-   "http": 200,
-   "url": "https://www.moservernet.ch/louer/appartements-geneve/",
-   "resolved_url": null,
-   "final_url": "https://www.moservernet.ch/louer/appartements-geneve/",
-   "title": "Location Appartements à Genève • Moser Vernet & Cie",
    "pages": 2,
    "end": "incremental",
    "more_capped": null,
@@ -87,6 +65,33 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
+   "cards": 48,
+   "new": 0,
+   "new_check": 0
+  },
+  {
+   "id": "moser-vernet",
+   "name": "Moser Vernet",
+   "niveau": 1,
+   "status": "partial",
+   "robots": "ok",
+   "http": 200,
+   "url": "https://www.moservernet.ch/louer/appartements-geneve/",
+   "resolved_url": null,
+   "final_url": "https://www.moservernet.ch/louer/appartements-geneve/",
+   "title": "Location Appartements à Genève • Moser Vernet & Cie",
+   "pages": 1,
+   "end": "error",
+   "more_capped": null,
+   "stopped_early": null,
+   "error": "Error: Page.evaluate: Execution context was destroyed, most likely because of a navigation",
+   "page_excerpt": null,
+   "nav_hints": [
+    "Louer",
+    "Acheter",
+    "Nouvelles constructions",
+    "Services"
+   ],
    "cards": 35,
    "new": 0,
    "new_check": 0
@@ -151,8 +156,8 @@
     "Gérance"
    ],
    "cards": 20,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "burger",
@@ -176,8 +181,8 @@
     "J'ai compris"
    ],
    "cards": 36,
-   "new": 0,
-   "new_check": 0
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "daudin",
@@ -591,7 +596,7 @@
     "Zoom out"
    ],
    "cards": 29,
-   "new": 1,
+   "new": 2,
    "new_check": 1
   },
   {
@@ -777,7 +782,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 7,
+   "cards": 5,
    "new": 0,
    "new_check": 0
   },
@@ -1123,9 +1128,9 @@
     "Notre régie",
     "Nos valeurs"
    ],
-   "cards": 35,
-   "new": 0,
-   "new_check": 0
+   "cards": 33,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "bersier",
@@ -1297,17 +1302,17 @@
    "http": 200,
    "url": "https://cogerim.ch/rental-listings/",
    "resolved_url": null,
-   "final_url": "https://cogerim.ch/rental-listings/page/2/",
-   "title": "Biens à la location Archive - Page 2 sur 5 - Cogerim",
-   "pages": 2,
+   "final_url": "https://cogerim.ch/rental-listings/page/3/",
+   "title": "Biens à la location Archive - Page 3 sur 6 - Cogerim",
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 12,
-   "new": 0,
+   "cards": 17,
+   "new": 1,
    "new_check": 0
   },
   {
@@ -1435,7 +1440,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 33,
+   "cards": 36,
    "new": 0,
    "new_check": 0
   },
@@ -1448,18 +1453,18 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=6",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 6",
-   "pages": 6,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 66,
-   "new": 2,
-   "new_check": 1
+   "cards": 22,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "cgi",
@@ -2814,8 +2819,8 @@
    "http": 202,
    "url": "https://www.immobilier.ch/fr/carte/agence/gerard-baezner-cie-17/louer/page-1?gr=1&clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/agence/gerard-baezner-cie-17/louer/appartement/geneve/anieres/appartement-4-pieces-dernier-etage-1609214",
-   "title": "Appartement 4 pces 128 m2 à louer à Anières | CHF 3'595.-/mois",
+   "final_url": "https://www.immobilier.ch/fr/agence/gerard-baezner-cie-17/louer/appartement/geneve/thonex/5-pieces-3eme-etage-thonex-1596706",
+   "title": "Appartement 5 pces 145 m2 à louer à Thônex | CHF 3'500.-/mois",
    "pages": 2,
    "end": "same",
    "more_capped": null,
@@ -2823,9 +2828,9 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 11,
-   "new": 1,
-   "new_check": 1
+   "cards": 10,
+   "new": 2,
+   "new_check": 2
   },
   {
    "id": "immobilier-carouge",
@@ -2858,18 +2863,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-30?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 30 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 30,
-   "end": "no_next",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-7?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 7 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 7,
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 746,
-   "new": 46,
-   "new_check": 36
+   "cards": 186,
+   "new": 8,
+   "new_check": 3
   },
   {
    "id": "flatfox",
@@ -2909,9 +2914,9 @@
     "S'abonner",
     "Gérer mes préférences"
    ],
-   "cards": 400,
+   "cards": 399,
    "new": 2,
-   "new_check": 2
+   "new_check": 0
   },
   {
    "id": "homegate",
