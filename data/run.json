@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T16:11:01+00:00",
+ "at": "2026-11-18T18:11:00+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -14,16 +14,16 @@
    "resolved_url": null,
    "final_url": "https://www.spg.ch/location/",
    "title": "Location - SPG",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 30,
-   "new": 1,
-   "new_check": 1
+   "cards": 23,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "rosset",
@@ -53,21 +53,21 @@
    "niveau": 1,
    "status": "ok",
    "robots": "ok",
-   "http": 200,
+   "http": 503,
    "url": "https://comptoir-immo.ch/location/appartement",
-   "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
+   "resolved_url": "https://comptoir-immo.ch/location/appartement/all/all/",
+   "final_url": "https://comptoir-immo.ch/location/appartement/all/all/?page=3",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 48,
-   "new": 0,
-   "new_check": 0
+   "cards": 72,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "moser-vernet",
@@ -181,8 +181,8 @@
     "J'ai compris"
    ],
    "cards": 36,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "daudin",
@@ -596,8 +596,8 @@
     "Zoom out"
    ],
    "cards": 29,
-   "new": 2,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "regisseurs-leman",
@@ -1129,8 +1129,8 @@
     "Nos valeurs"
    ],
    "cards": 33,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bersier",
@@ -1302,17 +1302,17 @@
    "http": 200,
    "url": "https://cogerim.ch/rental-listings/",
    "resolved_url": null,
-   "final_url": "https://cogerim.ch/rental-listings/page/3/",
-   "title": "Biens à la location Archive - Page 3 sur 6 - Cogerim",
-   "pages": 3,
+   "final_url": "https://cogerim.ch/rental-listings/page/2/",
+   "title": "Biens à la location Archive - Page 2 sur 6 - Cogerim",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 17,
-   "new": 1,
+   "cards": 12,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -1440,7 +1440,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 36,
+   "cards": 35,
    "new": 0,
    "new_check": 0
   },
@@ -1453,17 +1453,17 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
-   "pages": 2,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=3",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 3",
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 22,
-   "new": 0,
+   "cards": 33,
+   "new": 2,
    "new_check": 0
   },
   {
@@ -2360,7 +2360,7 @@
    "http": 200,
    "url": "https://www.c-re.ch",
    "resolved_url": "https://c-re.ch/a-louer/",
-   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40&show_map=false&paged=1&listing_type=rent#",
+   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40#",
    "title": "À louer - Classicus",
    "pages": 1,
    "end": "same",
@@ -2408,7 +2408,7 @@
     "LISTE CARTE",
     "LISTE",
     "CARTE",
-    "7 annonces trouvées"
+    "Le plus proche"
    ],
    "cards": 7,
    "new": 0,
@@ -2822,15 +2822,15 @@
    "final_url": "https://www.immobilier.ch/fr/agence/gerard-baezner-cie-17/louer/appartement/geneve/thonex/5-pieces-3eme-etage-thonex-1596706",
    "title": "Appartement 5 pces 145 m2 à louer à Thônex | CHF 3'500.-/mois",
    "pages": 2,
-   "end": "same",
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
    "cards": 10,
-   "new": 2,
-   "new_check": 2
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "immobilier-carouge",
@@ -2863,18 +2863,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-7?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 7 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 7,
-   "end": "incremental",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-30?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 30 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 30,
+   "end": "no_next",
    "more_capped": null,
-   "stopped_early": true,
+   "stopped_early": null,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 186,
-   "new": 8,
-   "new_check": 3
+   "cards": 742,
+   "new": 34,
+   "new_check": 33
   },
   {
    "id": "flatfox",
@@ -2914,9 +2914,9 @@
     "S'abonner",
     "Gérer mes préférences"
    ],
-   "cards": 399,
-   "new": 2,
-   "new_check": 0
+   "cards": 400,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "homegate",
