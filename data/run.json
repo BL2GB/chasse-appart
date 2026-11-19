@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T14:11:23+00:00",
+ "at": "2026-11-19T16:11:09+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 24,
+   "cards": 21,
    "new": 0,
    "new_check": 0
   },
@@ -56,17 +56,17 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 72,
-   "new": 2,
+   "cards": 48,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -89,9 +89,10 @@
    "nav_hints": [
     "Louer",
     "Acheter",
-    "Nouvelles"
+    "Nouvelles constructions",
+    "Services"
    ],
-   "cards": 34,
+   "cards": 35,
    "new": 1,
    "new_check": 1
   },
@@ -355,6 +356,10 @@
     "PARKINGS",
     "PARKINGS",
     "PARKINGS",
+    "2.5 pièces à louer, Servette-Charmilles",
+    "1 550 CHF.–/mois\n2.5 pièces",
+    "1 550 CHF.–/mois",
+    "2.5 pièces",
     "1 950 CHF.–/mois\nSurface 52m2",
     "1 950 CHF.–/mois",
     "Surface 52m2",
@@ -362,15 +367,11 @@
     "Quartier de Malagnou, 4 pièces à louer",
     "2 670 CHF.–/mois\n4 pièces",
     "2 670 CHF.–/mois",
-    "4 pièces",
-    "300 CHF.–/mois",
-    "300 CHF.–/mois",
-    "300 CHF.–/mois",
-    "300 CHF.–/mois"
+    "4 pièces"
    ],
    "cards": 23,
-   "new": 0,
-   "new_check": 0
+   "new": 2,
+   "new_check": 1
   },
   {
    "id": "bordier-schmidhauser",
@@ -869,9 +870,9 @@
     "+",
     "−"
    ],
-   "cards": 27,
-   "new": 0,
-   "new_check": 0
+   "cards": 28,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "nettilac-nm",
@@ -916,7 +917,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 10,
+   "cards": 9,
    "new": 0,
    "new_check": 0
   },
@@ -1410,16 +1411,16 @@
    "resolved_url": null,
    "final_url": "https://www.bernard-nicod.ch/fr/recherche/residentiel/location",
    "title": "Appartements et maisons à louer en Suisse romande",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 22,
-   "new": 0,
-   "new_check": 0
+   "cards": 36,
+   "new": 2,
+   "new_check": 1
   },
   {
    "id": "naef",
@@ -1439,7 +1440,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 34,
+   "cards": 35,
    "new": 0,
    "new_check": 0
   },
@@ -2840,8 +2841,8 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/naef-immobilier-geneve-location-ppe-siege-40/beau-duplex-carouge-situe-rue-caroubiers-15-1548823",
-   "title": "Appartement 6 pces 138 m2 à louer à Carouge GE | CHF 5'100.-/mois",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/privera-lausanne-972/saisir-superbe-studio-lumineux-carouge-1606054",
+   "title": "Appartement 2 pces 33 m2 à louer à Carouge GE | CHF 1'326.-/mois",
    "pages": 3,
    "end": "same",
    "more_capped": null,
@@ -2849,9 +2850,9 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 43,
-   "new": 5,
-   "new_check": 5
+   "cards": 41,
+   "new": 7,
+   "new_check": 3
   },
   {
    "id": "immobilier-geneve",
@@ -2862,18 +2863,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-5?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 5 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 5,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-8?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 8 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 8,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 136,
-   "new": 6,
-   "new_check": 0
+   "cards": 211,
+   "new": 13,
+   "new_check": 10
   },
   {
    "id": "flatfox",
@@ -2914,7 +2915,7 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 1,
+   "new": 3,
    "new_check": 1
   },
   {
