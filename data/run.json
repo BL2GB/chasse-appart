@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T12:11:00+00:00",
+ "at": "2026-11-19T14:11:23+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -14,16 +14,16 @@
    "resolved_url": null,
    "final_url": "https://www.spg.ch/location/",
    "title": "Location - SPG",
-   "pages": 4,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 31,
-   "new": 1,
-   "new_check": 1
+   "cards": 24,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "rosset",
@@ -34,18 +34,18 @@
    "http": 200,
    "url": "https://www.rosset.ch/louer",
    "resolved_url": null,
-   "final_url": "https://www.rosset.ch/louer?page=3",
+   "final_url": "https://www.rosset.ch/louer?page=2",
    "title": "Biens à louer | Rosset",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 74,
-   "new": 2,
-   "new_check": 2
+   "cards": 48,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "comptoir-immo",
@@ -56,17 +56,17 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 48,
-   "new": 0,
+   "cards": 72,
+   "new": 2,
    "new_check": 0
   },
   {
@@ -89,29 +89,11 @@
    "nav_hints": [
     "Louer",
     "Acheter",
-    "Nouvelles constructions",
-    "Services",
-    "Notre régie",
-    "Contact",
-    "Espace personnel",
-    "Contact",
-    "TYPE DE BIENS",
-    "TYPE DE BIENS",
-    "PIÈCES & SURFACES",
-    "PIÈCES & SURFACES",
-    "PRIX",
-    "PRIX",
-    "LOCALITÉS",
-    "LOCALITÉS",
-    "+ DE CRITÈRES",
-    "+ DE CRITÈRES",
-    "+ DE CRITÈRES",
-    "+ DE CRITÈRES",
-    "+ DE CRITÈRES"
+    "Nouvelles"
    ],
    "cards": 34,
-   "new": 0,
-   "new_check": 0
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "bory",
@@ -261,8 +243,8 @@
     "Mise en valeur & financement"
    ],
    "cards": 25,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bdd",
@@ -1435,7 +1417,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 24,
+   "cards": 22,
    "new": 0,
    "new_check": 0
   },
@@ -1457,7 +1439,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 35,
+   "cards": 34,
    "new": 0,
    "new_check": 0
   },
@@ -2377,7 +2359,7 @@
    "http": 200,
    "url": "https://www.c-re.ch",
    "resolved_url": "https://c-re.ch/a-louer/",
-   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40#",
+   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40&show_map=false&paged=1&listing_type=rent#",
    "title": "À louer - Classicus",
    "pages": 1,
    "end": "same",
@@ -2425,7 +2407,7 @@
     "LISTE CARTE",
     "LISTE",
     "CARTE",
-    "Le plus proche"
+    "7 annonces trouvées"
    ],
    "cards": 7,
    "new": 0,
@@ -2858,18 +2840,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-2?t=rent&c=1&p=c9611&nb=false&gr=1",
-   "title": "Page 2 appartements à louer à Carouge GE (GE)",
-   "pages": 2,
-   "end": "incremental",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/naef-immobilier-geneve-location-ppe-siege-40/beau-duplex-carouge-situe-rue-caroubiers-15-1548823",
+   "title": "Appartement 6 pces 138 m2 à louer à Carouge GE | CHF 5'100.-/mois",
+   "pages": 3,
+   "end": "same",
    "more_capped": null,
-   "stopped_early": true,
+   "stopped_early": null,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 41,
-   "new": 0,
-   "new_check": 0
+   "cards": 43,
+   "new": 5,
+   "new_check": 5
   },
   {
    "id": "immobilier-geneve",
@@ -2880,17 +2862,17 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-2?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 2 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 2,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-5?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 5 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 5,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 61,
-   "new": 0,
+   "cards": 136,
+   "new": 6,
    "new_check": 0
   },
   {
@@ -2932,8 +2914,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 3,
-   "new_check": 2
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "homegate",
