@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T16:11:09+00:00",
+ "at": "2026-11-19T18:10:58+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -14,16 +14,16 @@
    "resolved_url": null,
    "final_url": "https://www.spg.ch/location/",
    "title": "Location - SPG",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 21,
-   "new": 0,
-   "new_check": 0
+   "cards": 29,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "rosset",
@@ -56,17 +56,17 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 48,
-   "new": 0,
+   "cards": 72,
+   "new": 1,
    "new_check": 0
   },
   {
@@ -93,8 +93,8 @@
     "Services"
    ],
    "cards": 35,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bory",
@@ -283,16 +283,9 @@
     "Surface\n100 à 150 m²",
     "Pièces\n4 à 6",
     "Pièces\n4 à 6",
-    "15 annonces disponibles",
+    "14 annonces disponibles",
     "Supprimer les filtres",
     "Supprimer les filtres",
-    "1'150 CHF",
-    "1'150 CHF",
-    "CAROUGE / Rue des Pervenches 9",
-    "CAROUGE",
-    "Rue des Pervenches 9",
-    "APPARTEMENT DE 1,5 PIÈCES AU 6ÈME ÉTAGE",
-    "LIRE LA SUITE",
     "150 CHF",
     "150 CHF",
     "ONEX / Chemin du Pré-Longet 4",
@@ -304,9 +297,16 @@
     "4'650 CHF",
     "CONCHES / Chemin Calandrini 8",
     "CONCHES",
-    "Chemin Calandrini 8"
+    "Chemin Calandrini 8",
+    "LIRE LA SUITE",
+    "2'000 CHF",
+    "2'000 CHF",
+    "GENÈVE / Rue de l'Athénée 22",
+    "GENÈVE",
+    "Rue de l'Athénée 22",
+    "BUREAU D'ENVIRON 50 M2 AU 1ER ÉTAGE"
    ],
-   "cards": 15,
+   "cards": 14,
    "new": 0,
    "new_check": 0
   },
@@ -370,8 +370,8 @@
     "4 pièces"
    ],
    "cards": 23,
-   "new": 2,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bordier-schmidhauser",
@@ -730,7 +730,7 @@
     "Pièces",
     "Surface",
     "Prix",
-    "Précédent123456Suivant",
+    "Précédent1234Suivant",
     "Précédent",
     "Précédent",
     "1",
@@ -745,22 +745,22 @@
     "4",
     "4",
     "4",
-    "5",
-    "5",
-    "5",
-    "6",
-    "6",
-    "6",
     "Suivant",
     "Suivant",
     "Page dot 1",
     "Page dot 2",
     "Page dot 3",
-    "Page dot 1",
-    "Page dot 1",
-    "Page dot 2"
+    "Page dot 4",
+    "Page dot 5",
+    "Page dot 6",
+    "Page dot 7",
+    "Page dot 8",
+    "Page dot 9",
+    "Page dot 10",
+    "Page dot 11",
+    "Page dot 1"
    ],
-   "cards": 49,
+   "cards": 48,
    "new": 0,
    "new_check": 0
   },
@@ -871,8 +871,8 @@
     "−"
    ],
    "cards": 28,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "nettilac-nm",
@@ -1411,16 +1411,16 @@
    "resolved_url": null,
    "final_url": "https://www.bernard-nicod.ch/fr/recherche/residentiel/location",
    "title": "Appartements et maisons à louer en Suisse romande",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 36,
-   "new": 2,
-   "new_check": 1
+   "cards": 24,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "naef",
@@ -1431,18 +1431,18 @@
    "http": 200,
    "url": "https://www.naef.ch/louer/",
    "resolved_url": null,
-   "final_url": "https://www.naef.ch/louer/appartements-maisons/page-2/?sortingField=prix_desc&zoom=8",
+   "final_url": "https://www.naef.ch/louer/appartements-maisons/page-4/?sortingField=prix_desc&zoom=8",
    "title": "Location Appartements et Maisons en Suisse | Appartements et Maisons à Louer | Naef Immobilier",
-   "pages": 2,
+   "pages": 4,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 35,
-   "new": 0,
-   "new_check": 0
+   "cards": 71,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "gerofinance",
@@ -2841,18 +2841,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/privera-lausanne-972/saisir-superbe-studio-lumineux-carouge-1606054",
-   "title": "Appartement 2 pces 33 m2 à louer à Carouge GE | CHF 1'326.-/mois",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/imwire-properties-2128/appartement-meuble-grand-balcon-vue-degagee-verdure-1599872",
+   "title": "Appartement 3.5 pces 68 m2 à louer à Carouge GE | CHF 2'720.-/mois",
    "pages": 3,
-   "end": "same",
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 41,
-   "new": 7,
-   "new_check": 3
+   "cards": 43,
+   "new": 1,
+   "new_check": 0
   },
   {
    "id": "immobilier-geneve",
@@ -2863,18 +2863,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-8?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 8 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 8,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-4?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 4 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 4,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 211,
-   "new": 13,
-   "new_check": 10
+   "cards": 111,
+   "new": 7,
+   "new_check": 4
   },
   {
    "id": "flatfox",
@@ -2915,8 +2915,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 3,
-   "new_check": 1
+   "new": 7,
+   "new_check": 5
   },
   {
    "id": "homegate",
