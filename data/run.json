@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T10:11:06+00:00",
+ "at": "2026-11-20T11:53:43+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 20,
+   "cards": 23,
    "new": 0,
    "new_check": 0
   },
@@ -88,9 +88,7 @@
    "page_excerpt": null,
    "nav_hints": [
     "Louer",
-    "Acheter",
-    "Nouvelles constructions",
-    "Services"
+    "Acheter"
    ],
    "cards": 34,
    "new": 0,
@@ -497,9 +495,9 @@
     "2",
     "SURFACE DU TERRAIN M2",
     "2",
-    "À louer 10 biens",
+    "À louer 9 biens",
     "À louer",
-    "10 biens",
+    "9 biens",
     "Classer par",
     "Vue\nGalerie\nListe",
     "Vue",
@@ -517,7 +515,7 @@
     "2",
     "CHF 3'950.-"
    ],
-   "cards": 11,
+   "cards": 10,
    "new": 0,
    "new_check": 0
   },
@@ -730,7 +728,7 @@
     "Pièces",
     "Surface",
     "Prix",
-    "Précédent1234Suivant",
+    "Précédent123456Suivant",
     "Précédent",
     "Précédent",
     "1",
@@ -745,24 +743,24 @@
     "4",
     "4",
     "4",
+    "5",
+    "5",
+    "5",
+    "6",
+    "6",
+    "6",
     "Suivant",
     "Suivant",
     "Page dot 1",
+    "Page dot 1",
     "Page dot 2",
     "Page dot 3",
-    "Page dot 4",
-    "Page dot 5",
-    "Page dot 6",
-    "Page dot 7",
-    "Page dot 8",
-    "Page dot 9",
-    "Page dot 10",
-    "Page dot 11",
-    "Page dot 1"
+    "Page dot 1",
+    "Page dot 2"
    ],
-   "cards": 48,
-   "new": 0,
-   "new_check": 0
+   "cards": 53,
+   "new": 5,
+   "new_check": 2
   },
   {
    "id": "regie-centre",
@@ -917,7 +915,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 9,
+   "cards": 12,
    "new": 0,
    "new_check": 0
   },
@@ -1002,7 +1000,7 @@
     "MULTIMÉDIA",
     "En images\nEn vidéo\nPublications"
    ],
-   "cards": 9,
+   "cards": 8,
    "new": 0,
    "new_check": 0
   },
@@ -1128,7 +1126,7 @@
     "Notre régie",
     "Nos valeurs"
    ],
-   "cards": 33,
+   "cards": 31,
    "new": 0,
    "new_check": 0
   },
@@ -1440,7 +1438,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 35,
+   "cards": 34,
    "new": 0,
    "new_check": 0
   },
@@ -1453,18 +1451,18 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=3",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 3",
-   "pages": 3,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 33,
-   "new": 1,
-   "new_check": 1
+   "cards": 22,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "cgi",
@@ -2863,18 +2861,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-30?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 30 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 30,
-   "end": "no_next",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-6?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 6 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 6,
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 744,
-   "new": 42,
-   "new_check": 35
+   "cards": 161,
+   "new": 4,
+   "new_check": 1
   },
   {
    "id": "flatfox",
@@ -2915,8 +2913,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 3,
-   "new_check": 1
+   "new": 4,
+   "new_check": 3
   },
   {
    "id": "homegate",
