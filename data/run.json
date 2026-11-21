@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T11:21:22+00:00",
+ "at": "2026-11-21T12:10:56+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -86,7 +86,12 @@
    "stopped_early": null,
    "error": "Error: Page.evaluate: Execution context was destroyed, most likely because of a navigation",
    "page_excerpt": null,
-   "nav_hints": [],
+   "nav_hints": [
+    "Louer",
+    "Acheter",
+    "Nouvelles constructions",
+    "Services"
+   ],
    "cards": 34,
    "new": 0,
    "new_check": 0
@@ -1435,7 +1440,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 35,
+   "cards": 34,
    "new": 0,
    "new_check": 0
   },
@@ -2858,17 +2863,17 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-4?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 4 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 4,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-2?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 2 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 111,
-   "new": 1,
+   "cards": 61,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -2910,7 +2915,7 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 0,
+   "new": 2,
    "new_check": 0
   },
   {

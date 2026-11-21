@@ -1,0 +1,26 @@
+{
+ "at": "2026-11-21T12:10:56+00:00",
+ "first_run": false,
+ "cards": [
+  {
+   "hash": "7d3945d743228abb",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/1208-genf/86564173/",
+   "text": "Priority Location 1’600 CHF Appartement 2 pièces 1208 Genf",
+   "pre": "out",
+   "weak": false
+  },
+  {
+   "hash": "fd580405994bcd62",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/thonex-1218-le-grand-saconnex/86564170/",
+   "text": "Priority Location 1’590 CHF Appartement 3 pièces 1218 Le Grand-Saconnex",
+   "pre": "out",
+   "weak": false
+  }
+ ]
+}
