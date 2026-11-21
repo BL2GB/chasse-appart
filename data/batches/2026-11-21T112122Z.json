@@ -1,0 +1,16 @@
+{
+ "at": "2026-11-21T11:21:22+00:00",
+ "first_run": false,
+ "cards": [
+  {
+   "hash": "cea449aa744843fc",
+   "source_id": "immobilier-geneve",
+   "source": "immobilier.ch (Genève)",
+   "kind": "portail",
+   "href": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/home-location-1878/grand-3-pieces-vielle-ville-geneve-hyper-centre-cachet-1618127",
+   "text": "1 2 3 4 NEW CHF 2'850.-/mois Appartement 3 pièces Genève, Rue Jean-Calvin 68 m23",
+   "pre": "out",
+   "weak": false
+  }
+ ]
+}
