@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T12:10:56+00:00",
+ "at": "2026-11-21T14:11:01+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 20,
+   "cards": 22,
    "new": 0,
    "new_check": 0
   },
@@ -56,18 +56,18 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 48,
-   "new": 0,
-   "new_check": 0
+   "cards": 72,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "moser-vernet",
@@ -2863,18 +2863,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-2?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 2 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 2,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-4?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 4 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 4,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 61,
-   "new": 0,
-   "new_check": 0
+   "cards": 111,
+   "new": 2,
+   "new_check": 2
   },
   {
    "id": "flatfox",
@@ -2915,7 +2915,7 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 2,
+   "new": 0,
    "new_check": 0
   },
   {
