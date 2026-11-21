@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T14:11:01+00:00",
+ "at": "2026-11-21T16:11:03+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -56,18 +56,18 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 72,
-   "new": 1,
-   "new_check": 1
+   "cards": 48,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "moser-vernet",
@@ -1440,7 +1440,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 34,
+   "cards": 35,
    "new": 0,
    "new_check": 0
   },
@@ -2850,7 +2850,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 42,
+   "cards": 38,
    "new": 0,
    "new_check": 0
   },
@@ -2915,8 +2915,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 0,
-   "new_check": 0
+   "new": 3,
+   "new_check": 3
   },
   {
    "id": "homegate",
