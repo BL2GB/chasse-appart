@@ -1,0 +1,37 @@
+{
+ "at": "2026-11-22T08:11:00+00:00",
+ "first_run": false,
+ "cards": [
+  {
+   "hash": "dd1086e0f47d91a8",
+   "source_id": "immobilier-carouge",
+   "source": "immobilier.ch (Carouge)",
+   "kind": "portail",
+   "href": "https://www.regiez.ch/fiche-location.html?ref=6303-503",
+   "text": "Informations complémentaires 3ème étage 116 m² (surface utilisable) Disponible de suite Référence 6303-503 Lien vers plus d'informations",
+   "pre": "check",
+   "weak": false,
+   "detail": "En poursuivant votre navigation sur ce site, vous acceptez les termes notre politique de confidentialité. En savoir plus Accepter Contactez-nous Votre espace Accueil Louer Acheter Qui sommes nous ? Appartement 5 Pièces, 116 m² Rue Jacques-Grosselin - 1227 Carouge GE Ref: 6303-503 Surface : 116 Pièces : 5 Étage : 3 Déposer ma candidature Brochure de présentation Carte Photos Contact CHF 4 300.- CARACTÉRISTIQUES Rue Jacques-Grosselin - 1227 Carouge GE Disponibilité: 22.11.2026 Loyer : CHF 4 300.- Charges: CHF 200.- Carouge – Spacieux 5 pièces traversant avec balcon à deux pas de la Praille Référence : 6303-503 Adresse : Rue Jacques-Grosselin , 1227 Carouge Située au cœur de Carouge, la rue Jacques-Grosselin séduit par son atmosphère résidentielle et son emplacement privilégié, offrant un cadre de vie paisible tout en restant à proximité immédiate de l’animation et des commodités de la ville. Il se compose comme suit : - Un séjour avec accps balcon - Une cuisine semi-ouverte agencée et équipée - 3 chambres à coucher - Une salle de bain - Une salle de douche avec branchement lave-linge - Un WC séparé Informations complémentaires : - Cave : oui - Ascenseur : oui - Parking : oui , un box à CHF 300.-/mois - Local à vélo : oui - Fibre optique : oui - Etage :3ème étage - Surface : 116m2 Transports : - Gare Lancy-Pont-Rouge : 18 min - Arrêt de bus ‘’Alexandre Gavard’’- lignes 11, A1 : 11 min à pied - Arrêt de tram ‘’ Pictet-Thulleson’’- lignes 15 et 17 : 10 min à pied Commodités : - MParc La Praille : 1 min à pied - Poste, banque : 6 min à pied - Ecole primaire ‘’Jacques-Dalphin’’ : 7 min à pied Voici les documents requis pour votre candidature: -Pièce d'identité suisse/permis de séjour -Une attestation de non-poursuite de moins de 3 mois -Une attestation récente de votre employeur mentionnant la date d'entrée en fonction, le salaire et le type de votre contrat actuel -Les 3 dernières fiches de salaire Pour déposer votre candidature, veuillez utiliser le lien suivant : https://rentalapplication.zimmermannimmobilier.ch/?ref=6303-503 + − © OpenStreetMap contributors. Une question ? Contactez-nous ! Zimmermann Immobilier SA Agence de Genève 058 201 85 00 geneve@zimmo.ch La régie proche de ses clients Nos agences Votre espace Nos horaires Zimmermann Immobilier Genève-Gare Espace locataire Lundi-Vendredi Politique de confidentialité Genève-Lac Espace copropriétaire 8h30-12h30 | 13h30-17h Notre podcast Genève-Eaux-Vives Espace propriétaire Vaud Espace entrepreneur Valais Fribourg © 2026 - Zimmermann Immobilier, tous droits réservés"
+  },
+  {
+   "hash": "1e3dbbf996cc0ed4",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/geneve-1205-genf/86564605/",
+   "text": "Priority Location 1’500 CHF Appartement 2 pièces 1205 Genf",
+   "pre": "out",
+   "weak": false
+  },
+  {
+   "hash": "5c98188e6398a733",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/parc-de-chateau-banquet-1202-genf/86564489/",
+   "text": "Priority Location 2’500 CHF Appartement 2 pièces 1202 Genf",
+   "pre": "out",
+   "weak": false
+  }
+ ]
+}
