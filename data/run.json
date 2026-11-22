@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T14:11:03+00:00",
+ "at": "2026-11-22T16:10:57+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 22,
+   "cards": 23,
    "new": 0,
    "new_check": 0
   },
@@ -1440,7 +1440,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 33,
+   "cards": 34,
    "new": 0,
    "new_check": 0
   },
@@ -2360,7 +2360,7 @@
    "http": 200,
    "url": "https://www.c-re.ch",
    "resolved_url": "https://c-re.ch/a-louer/",
-   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40&show_map=false&paged=1&listing_type=rent#",
+   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40#",
    "title": "À louer - Classicus",
    "pages": 1,
    "end": "same",
@@ -2408,7 +2408,7 @@
     "LISTE CARTE",
     "LISTE",
     "CARTE",
-    "7 annonces trouvées"
+    "Le plus proche"
    ],
    "cards": 7,
    "new": 0,
