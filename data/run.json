@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T13:08:11+00:00",
+ "at": "2026-11-23T14:11:11+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 24,
+   "cards": 23,
    "new": 0,
    "new_check": 0
   },
@@ -73,28 +73,23 @@
    "id": "moser-vernet",
    "name": "Moser Vernet",
    "niveau": 1,
-   "status": "partial",
+   "status": "error",
    "robots": "ok",
    "http": 200,
    "url": "https://www.moservernet.ch/louer/appartements-geneve/",
    "resolved_url": null,
-   "final_url": "https://www.moservernet.ch/louer/appartements-geneve/",
-   "title": "Location Appartements à Genève • Moser Vernet & Cie",
+   "final_url": null,
+   "title": null,
    "pages": 1,
-   "end": "error",
+   "end": null,
    "more_capped": null,
    "stopped_early": null,
    "error": "Error: Page.evaluate: Execution context was destroyed, most likely because of a navigation",
    "page_excerpt": null,
-   "nav_hints": [
-    "Louer",
-    "Acheter",
-    "Nouvelles constructions",
-    "Services"
-   ],
-   "cards": 35,
-   "new": 2,
-   "new_check": 2
+   "nav_hints": null,
+   "cards": 0,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bory",
@@ -562,7 +557,7 @@
    "page_excerpt": null,
    "nav_hints": null,
    "cards": 48,
-   "new": 0,
+   "new": 1,
    "new_check": 0
   },
   {
@@ -1453,18 +1448,18 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
-   "pages": 2,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=3",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 3",
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 22,
-   "new": 0,
-   "new_check": 0
+   "cards": 33,
+   "new": 2,
+   "new_check": 1
   },
   {
    "id": "cgi",
@@ -2915,8 +2910,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 1,
-   "new_check": 0
+   "new": 2,
+   "new_check": 2
   },
   {
    "id": "homegate",
