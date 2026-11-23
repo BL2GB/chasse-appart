@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T10:11:02+00:00",
+ "at": "2026-11-23T12:11:17+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 21,
+   "cards": 24,
    "new": 0,
    "new_check": 0
   },
@@ -73,7 +73,7 @@
    "id": "moser-vernet",
    "name": "Moser Vernet",
    "niveau": 1,
-   "status": "partial",
+   "status": "ok",
    "robots": "ok",
    "http": 200,
    "url": "https://www.moservernet.ch/louer/appartements-geneve/",
@@ -81,20 +81,56 @@
    "final_url": "https://www.moservernet.ch/louer/appartements-geneve/",
    "title": "Location Appartements à Genève • Moser Vernet & Cie",
    "pages": 1,
-   "end": "error",
+   "end": "same",
    "more_capped": null,
    "stopped_early": null,
-   "error": "Error: Page.evaluate: Execution context was destroyed, most likely because of a navigation",
+   "error": null,
    "page_excerpt": null,
    "nav_hints": [
     "Louer",
     "Acheter",
     "Nouvelles constructions",
-    "Services"
+    "Services",
+    "Notre régie",
+    "Contact",
+    "Espace personnel",
+    "Contact",
+    "APPARTEMENTS",
+    "APPARTEMENTS",
+    "APPARTEMENTS",
+    "PIÈCES & SURFACES",
+    "PIÈCES & SURFACES",
+    "PRIX",
+    "PRIX",
+    "LOCALITÉS",
+    "LOCALITÉS",
+    "+ DE CRITÈRES",
+    "+ DE CRITÈRES",
+    "+ DE CRITÈRES",
+    "+ DE CRITÈRES",
+    "+ DE CRITÈRES",
+    "Close",
+    "39 Appartements en location à Genève",
+    "PRIX CROISSANT",
+    "PRIX CROISSANT",
+    "PRIX CROISSANT",
+    "AFFICHER LA LISTE",
+    "AFFICHER LA LISTE",
+    "CLIQUEZ POUR VOIR PLUS DE PHOTOS",
+    "CLIQUEZ POUR VOIR PLUS DE PHOTOS",
+    "CLIQUEZ POUR VOIR PLUS DE PHOTOS",
+    "CLIQUEZ POUR VOIR PLUS DE PHOTOS",
+    "CLIQUEZ POUR VOIR PLUS DE PHOTOS",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "Slide suivante"
    ],
-   "cards": 33,
-   "new": 0,
-   "new_check": 0
+   "cards": 35,
+   "new": 2,
+   "new_check": 2
   },
   {
    "id": "bory",
@@ -432,7 +468,7 @@
     "2",
     "CHF 2'600.-"
    ],
-   "cards": 34,
+   "cards": 33,
    "new": 0,
    "new_check": 0
   },
@@ -761,8 +797,8 @@
     "Page dot 2"
    ],
    "cards": 59,
-   "new": 0,
-   "new_check": 0
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "regie-centre",
@@ -1128,7 +1164,7 @@
     "Notre régie",
     "Nos valeurs"
    ],
-   "cards": 30,
+   "cards": 28,
    "new": 0,
    "new_check": 0
   },
@@ -1411,15 +1447,15 @@
    "resolved_url": null,
    "final_url": "https://www.bernard-nicod.ch/fr/recherche/residentiel/location",
    "title": "Appartements et maisons à louer en Suisse romande",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 24,
-   "new": 0,
+   "cards": 36,
+   "new": 1,
    "new_check": 0
   },
   {
@@ -1453,18 +1489,18 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=3",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 3",
-   "pages": 3,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 33,
-   "new": 1,
-   "new_check": 1
+   "cards": 22,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "cgi",
@@ -2137,7 +2173,7 @@
     "0 CHF"
    ],
    "cards": 7,
-   "new": 1,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -2841,18 +2877,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-2?t=rent&c=1&p=c9611&nb=false&gr=1",
-   "title": "Page 2 appartements à louer à Carouge GE (GE)",
-   "pages": 2,
-   "end": "incremental",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/homenhancement-2562/charmant-studio-meuble-louer-carouge-rue-noirettes-geneve-1178343",
+   "title": "Appartement meublé 1 pce 33 m2 à louer à Carouge GE | CHF 2'700.-/mois",
+   "pages": 3,
+   "end": "same",
    "more_capped": null,
-   "stopped_early": true,
+   "stopped_early": null,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 42,
-   "new": 0,
-   "new_check": 0
+   "cards": 43,
+   "new": 2,
+   "new_check": 2
   },
   {
    "id": "immobilier-geneve",
@@ -2872,8 +2908,8 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 735,
-   "new": 36,
+   "cards": 734,
+   "new": 37,
    "new_check": 32
   },
   {
@@ -2915,8 +2951,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 3,
-   "new_check": 0
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "homegate",
