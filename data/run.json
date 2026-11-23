@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T14:11:11+00:00",
+ "at": "2026-11-23T16:11:23+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 23,
+   "cards": 20,
    "new": 0,
    "new_check": 0
   },
@@ -73,21 +73,21 @@
    "id": "moser-vernet",
    "name": "Moser Vernet",
    "niveau": 1,
-   "status": "error",
+   "status": "partial",
    "robots": "ok",
    "http": 200,
    "url": "https://www.moservernet.ch/louer/appartements-geneve/",
    "resolved_url": null,
-   "final_url": null,
-   "title": null,
+   "final_url": "https://www.moservernet.ch/louer/appartements-geneve/",
+   "title": "Location Appartements à Genève • Moser Vernet & Cie",
    "pages": 1,
-   "end": null,
+   "end": "error",
    "more_capped": null,
    "stopped_early": null,
    "error": "Error: Page.evaluate: Execution context was destroyed, most likely because of a navigation",
    "page_excerpt": null,
-   "nav_hints": null,
-   "cards": 0,
+   "nav_hints": [],
+   "cards": 34,
    "new": 0,
    "new_check": 0
   },
@@ -351,6 +351,9 @@
     "PARKINGS",
     "PARKINGS",
     "PARKINGS",
+    "5 800 CHF.–/mois\n5 pièces",
+    "5 800 CHF.–/mois",
+    "5 pièces",
     "2.5 pièces à louer, Servette-Charmilles",
     "1 550 CHF.–/mois\n2.5 pièces",
     "1 550 CHF.–/mois",
@@ -359,14 +362,11 @@
     "1 950 CHF.–/mois",
     "Surface 52m2",
     "2",
-    "Quartier de Malagnou, 4 pièces à louer",
-    "2 670 CHF.–/mois\n4 pièces",
-    "2 670 CHF.–/mois",
-    "4 pièces"
+    "1 950 CHF.–/mois\nSurface 52m2"
    ],
    "cards": 23,
-   "new": 0,
-   "new_check": 0
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "bordier-schmidhauser",
@@ -547,18 +547,18 @@
    "http": 200,
    "url": "https://www.milleniumproperties.ch/location-immobilier-geneve/",
    "resolved_url": null,
-   "final_url": "https://www.milleniumproperties.ch/location-immobilier-geneve/?page=4",
-   "title": "Appartements et maisons à louer à Genève · Page 4 sur 6",
-   "pages": 4,
-   "end": "incremental",
+   "final_url": "https://www.milleniumproperties.ch/location-immobilier-geneve/?page=6",
+   "title": "Appartements et maisons à louer à Genève · Page 6 sur 6",
+   "pages": 6,
+   "end": "no_next",
    "more_capped": null,
-   "stopped_early": true,
+   "stopped_early": null,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 48,
-   "new": 1,
-   "new_check": 0
+   "cards": 64,
+   "new": 2,
+   "new_check": 2
   },
   {
    "id": "vpi",
@@ -865,8 +865,8 @@
     "+",
     "−"
    ],
-   "cards": 30,
-   "new": 0,
+   "cards": 31,
+   "new": 4,
    "new_check": 0
   },
   {
@@ -891,7 +891,7 @@
     "−"
    ],
    "cards": 2,
-   "new": 0,
+   "new": 1,
    "new_check": 0
   },
   {
@@ -1123,7 +1123,7 @@
     "Notre régie",
     "Nos valeurs"
    ],
-   "cards": 28,
+   "cards": 26,
    "new": 0,
    "new_check": 0
   },
@@ -1435,7 +1435,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 35,
+   "cards": 34,
    "new": 0,
    "new_check": 0
   },
@@ -1448,18 +1448,18 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=3",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 3",
-   "pages": 3,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 33,
-   "new": 2,
-   "new_check": 1
+   "cards": 22,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "cgi",
@@ -2836,18 +2836,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-2?t=rent&c=1&p=c9611&nb=false&gr=1",
-   "title": "Page 2 appartements à louer à Carouge GE (GE)",
-   "pages": 2,
-   "end": "incremental",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/zimmermann-immobilier-772/appartement5116-1605072",
+   "title": "Appartement 5 pces 116 m2 à louer à Carouge GE | CHF 4'300.-/mois",
+   "pages": 3,
+   "end": "same",
    "more_capped": null,
-   "stopped_early": true,
+   "stopped_early": null,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 41,
-   "new": 0,
-   "new_check": 0
+   "cards": 44,
+   "new": 3,
+   "new_check": 3
   },
   {
    "id": "immobilier-geneve",
@@ -2858,18 +2858,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-2?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 2 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 2,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-10?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 10 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 10,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 61,
-   "new": 0,
-   "new_check": 0
+   "cards": 261,
+   "new": 12,
+   "new_check": 6
   },
   {
    "id": "flatfox",
@@ -2910,7 +2910,7 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 2,
+   "new": 4,
    "new_check": 2
   },
   {
@@ -2983,23 +2983,23 @@
    "id": "immoscout-geneve",
    "name": "ImmoScout24 (Genève)",
    "niveau": 2,
-   "status": "no_rent_page_found",
+   "status": "ok",
    "robots": "ok",
-   "http": 403,
+   "http": 200,
    "url": "https://www.immoscout24.ch/fr/appartement/louer/lieu-geneve",
    "resolved_url": null,
-   "final_url": null,
-   "title": null,
-   "pages": 0,
-   "end": null,
+   "final_url": "https://www.immoscout24.ch/fr/appartement/louer/lieu-geneve?pn=3",
+   "title": "immoscout24.ch",
+   "pages": 3,
+   "end": "empty",
    "more_capped": null,
    "stopped_early": null,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 0,
-   "new": 0,
-   "new_check": 0
+   "cards": 6,
+   "new": 6,
+   "new_check": 5
   },
   {
    "id": "immoscout-carouge",
