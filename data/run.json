@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T16:11:23+00:00",
+ "at": "2026-11-23T18:11:10+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -14,16 +14,16 @@
    "resolved_url": null,
    "final_url": "https://www.spg.ch/location/",
    "title": "Location - SPG",
-   "pages": 2,
+   "pages": 7,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 20,
-   "new": 0,
-   "new_check": 0
+   "cards": 47,
+   "new": 5,
+   "new_check": 4
   },
   {
    "id": "rosset",
@@ -56,38 +56,38 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 48,
-   "new": 0,
-   "new_check": 0
+   "cards": 72,
+   "new": 3,
+   "new_check": 2
   },
   {
    "id": "moser-vernet",
    "name": "Moser Vernet",
    "niveau": 1,
-   "status": "partial",
+   "status": "error",
    "robots": "ok",
    "http": 200,
    "url": "https://www.moservernet.ch/louer/appartements-geneve/",
    "resolved_url": null,
-   "final_url": "https://www.moservernet.ch/louer/appartements-geneve/",
-   "title": "Location Appartements à Genève • Moser Vernet & Cie",
+   "final_url": null,
+   "title": null,
    "pages": 1,
-   "end": "error",
+   "end": null,
    "more_capped": null,
    "stopped_early": null,
    "error": "Error: Page.evaluate: Execution context was destroyed, most likely because of a navigation",
    "page_excerpt": null,
-   "nav_hints": [],
-   "cards": 34,
+   "nav_hints": null,
+   "cards": 0,
    "new": 0,
    "new_check": 0
   },
@@ -365,8 +365,8 @@
     "1 950 CHF.–/mois\nSurface 52m2"
    ],
    "cards": 23,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bordier-schmidhauser",
@@ -547,18 +547,18 @@
    "http": 200,
    "url": "https://www.milleniumproperties.ch/location-immobilier-geneve/",
    "resolved_url": null,
-   "final_url": "https://www.milleniumproperties.ch/location-immobilier-geneve/?page=6",
-   "title": "Appartements et maisons à louer à Genève · Page 6 sur 6",
-   "pages": 6,
-   "end": "no_next",
+   "final_url": "https://www.milleniumproperties.ch/location-immobilier-geneve/?page=4",
+   "title": "Appartements et maisons à louer à Genève · Page 4 sur 6",
+   "pages": 4,
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 64,
-   "new": 2,
-   "new_check": 2
+   "cards": 48,
+   "new": 1,
+   "new_check": 0
   },
   {
    "id": "vpi",
@@ -866,7 +866,7 @@
     "−"
    ],
    "cards": 31,
-   "new": 4,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -891,7 +891,7 @@
     "−"
    ],
    "cards": 2,
-   "new": 1,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -1435,7 +1435,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 34,
+   "cards": 32,
    "new": 0,
    "new_check": 0
   },
@@ -2836,18 +2836,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/zimmermann-immobilier-772/appartement5116-1605072",
-   "title": "Appartement 5 pces 116 m2 à louer à Carouge GE | CHF 4'300.-/mois",
-   "pages": 3,
-   "end": "same",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/carouge-ge/page-2?t=rent&c=1&p=c9611&nb=false&gr=1",
+   "title": "Page 2 appartements à louer à Carouge GE (GE)",
+   "pages": 2,
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 44,
-   "new": 3,
-   "new_check": 3
+   "cards": 38,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "immobilier-geneve",
@@ -2858,18 +2858,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-10?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 10 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 10,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-5?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 5 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 5,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 261,
-   "new": 12,
-   "new_check": 6
+   "cards": 136,
+   "new": 4,
+   "new_check": 2
   },
   {
    "id": "flatfox",
@@ -2910,8 +2910,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 4,
-   "new_check": 2
+   "new": 5,
+   "new_check": 3
   },
   {
    "id": "homegate",
@@ -2983,23 +2983,23 @@
    "id": "immoscout-geneve",
    "name": "ImmoScout24 (Genève)",
    "niveau": 2,
-   "status": "ok",
+   "status": "no_rent_page_found",
    "robots": "ok",
-   "http": 200,
+   "http": 403,
    "url": "https://www.immoscout24.ch/fr/appartement/louer/lieu-geneve",
    "resolved_url": null,
-   "final_url": "https://www.immoscout24.ch/fr/appartement/louer/lieu-geneve?pn=3",
-   "title": "immoscout24.ch",
-   "pages": 3,
-   "end": "empty",
+   "final_url": null,
+   "title": null,
+   "pages": 0,
+   "end": null,
    "more_capped": null,
    "stopped_early": null,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 6,
-   "new": 6,
-   "new_check": 5
+   "cards": 0,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "immoscout-carouge",
