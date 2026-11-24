@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T13:55:08+00:00",
+ "at": "2026-11-24T14:11:06+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 22,
+   "cards": 20,
    "new": 0,
    "new_check": 0
   },
@@ -36,7 +36,7 @@
    "resolved_url": null,
    "final_url": "https://www.rosset.ch/louer?page=3",
    "title": "Biens à louer | Rosset",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
@@ -44,8 +44,8 @@
    "page_excerpt": null,
    "nav_hints": null,
    "cards": 72,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "comptoir-immo",
@@ -56,24 +56,24 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 72,
-   "new": 4,
-   "new_check": 2
+   "cards": 48,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "moser-vernet",
    "name": "Moser Vernet",
    "niveau": 1,
-   "status": "ok",
+   "status": "partial",
    "robots": "ok",
    "http": 200,
    "url": "https://www.moservernet.ch/louer/appartements-geneve/",
@@ -81,10 +81,10 @@
    "final_url": "https://www.moservernet.ch/louer/appartements-geneve/",
    "title": "Location Appartements à Genève • Moser Vernet & Cie",
    "pages": 1,
-   "end": "same",
+   "end": "error",
    "more_capped": null,
    "stopped_early": null,
-   "error": null,
+   "error": "Error: Page.evaluate: Execution context was destroyed, most likely because of a navigation",
    "page_excerpt": null,
    "nav_hints": [
     "Louer",
@@ -1476,7 +1476,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 32,
+   "cards": 35,
    "new": 0,
    "new_check": 0
   },
@@ -1489,18 +1489,18 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=3",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 3",
-   "pages": 3,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 33,
-   "new": 2,
-   "new_check": 2
+   "cards": 22,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "cgi",
@@ -1511,17 +1511,17 @@
    "http": 200,
    "url": "https://www.gerances.ch/a-louer",
    "resolved_url": null,
-   "final_url": "https://www.gerances.ch/a-louer/page/3",
-   "title": "À Louer – Page 3 – GPF Gestion de Patrimoine Foncier SA | Votre agence immobilière à Genève",
-   "pages": 3,
+   "final_url": "https://www.gerances.ch/a-louer/page/2",
+   "title": "À Louer – Page 2 – GPF Gestion de Patrimoine Foncier SA | Votre agence immobilière à Genève",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 36,
-   "new": 1,
+   "cards": 24,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -2899,18 +2899,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-8?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 8 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 8,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-2?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 2 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 211,
-   "new": 10,
-   "new_check": 6
+   "cards": 61,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "flatfox",
@@ -2951,8 +2951,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 3,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "homegate",
