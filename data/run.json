@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T10:10:59+00:00",
+ "at": "2026-11-24T12:10:58+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -14,16 +14,16 @@
    "resolved_url": null,
    "final_url": "https://www.spg.ch/location/",
    "title": "Location - SPG",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 20,
-   "new": 0,
-   "new_check": 0
+   "cards": 30,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "rosset",
@@ -34,7 +34,7 @@
    "http": 200,
    "url": "https://www.rosset.ch/louer",
    "resolved_url": null,
-   "final_url": "https://www.rosset.ch/louer?page=3",
+   "final_url": "https://www.rosset.ch/louer?page=2",
    "title": "Biens à louer | Rosset",
    "pages": 2,
    "end": "incremental",
@@ -43,7 +43,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 72,
+   "cards": 48,
    "new": 0,
    "new_check": 0
   },
@@ -73,7 +73,7 @@
    "id": "moser-vernet",
    "name": "Moser Vernet",
    "niveau": 1,
-   "status": "partial",
+   "status": "ok",
    "robots": "ok",
    "http": 200,
    "url": "https://www.moservernet.ch/louer/appartements-geneve/",
@@ -81,12 +81,53 @@
    "final_url": "https://www.moservernet.ch/louer/appartements-geneve/",
    "title": "Location Appartements à Genève • Moser Vernet & Cie",
    "pages": 1,
-   "end": "error",
+   "end": "same",
    "more_capped": null,
    "stopped_early": null,
-   "error": "Error: Page.evaluate: Execution context was destroyed, most likely because of a navigation",
+   "error": null,
    "page_excerpt": null,
-   "nav_hints": [],
+   "nav_hints": [
+    "Louer",
+    "Acheter",
+    "Nouvelles constructions",
+    "Services",
+    "Notre régie",
+    "Contact",
+    "Espace personnel",
+    "Contact",
+    "APPARTEMENTS",
+    "APPARTEMENTS",
+    "APPARTEMENTS",
+    "PIÈCES & SURFACES",
+    "PIÈCES & SURFACES",
+    "PRIX",
+    "PRIX",
+    "LOCALITÉS",
+    "LOCALITÉS",
+    "+ DE CRITÈRES",
+    "+ DE CRITÈRES",
+    "+ DE CRITÈRES",
+    "+ DE CRITÈRES",
+    "+ DE CRITÈRES",
+    "Close",
+    "38 Appartements en location à Genève",
+    "PRIX CROISSANT",
+    "PRIX CROISSANT",
+    "PRIX CROISSANT",
+    "AFFICHER LA LISTE",
+    "AFFICHER LA LISTE",
+    "CLIQUEZ POUR VOIR PLUS DE PHOTOS",
+    "CLIQUEZ POUR VOIR PLUS DE PHOTOS",
+    "CLIQUEZ POUR VOIR PLUS DE PHOTOS",
+    "CLIQUEZ POUR VOIR PLUS DE PHOTOS",
+    "CLIQUEZ POUR VOIR PLUS DE PHOTOS",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "Slide suivante"
+   ],
    "cards": 34,
    "new": 0,
    "new_check": 0
@@ -238,9 +279,9 @@
     "Promotions",
     "Mise en valeur & financement"
    ],
-   "cards": 26,
-   "new": 0,
-   "new_check": 0
+   "cards": 27,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "bdd",
@@ -428,8 +469,8 @@
     "CHF 6'500.-"
    ],
    "cards": 34,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "fm-management",
@@ -501,20 +542,20 @@
     "Galerie\nListe",
     "Galerie\nListe",
     "Galerie\nListe",
-    "CHF 6'800.-",
-    "CHF 6'800.-",
-    "CHF 6'800.-",
-    "Genève | Rues basses - Cité",
-    "136 m2",
-    "136 m2",
-    "136 m2",
-    "136 m2",
-    "2",
-    "CHF 3'950.-"
+    "CHF 4'600.-",
+    "CHF 4'600.-",
+    "CHF 4'600.-",
+    "Genève | Genève",
+    "5  3  2",
+    "5  3  2",
+    "5",
+    "5",
+    "3",
+    "3"
    ],
    "cards": 10,
-   "new": 0,
-   "new_check": 0
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "eam",
@@ -557,8 +598,8 @@
    "page_excerpt": null,
    "nav_hints": null,
    "cards": 37,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "vpi",
@@ -755,8 +796,8 @@
     "Page dot 1",
     "Page dot 2"
    ],
-   "cards": 59,
-   "new": 0,
+   "cards": 57,
+   "new": 1,
    "new_check": 0
   },
   {
@@ -768,17 +809,17 @@
    "http": 200,
    "url": "https://regieducentre.ch/locations/",
    "resolved_url": null,
-   "final_url": "https://regieducentre.ch/locations/page/3/",
+   "final_url": "https://regieducentre.ch/locations/page/2/",
    "title": "Régie du Centre - Locations",
-   "pages": 3,
-   "end": "empty",
+   "pages": 2,
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
    "cards": 6,
-   "new": 1,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -866,8 +907,8 @@
     "−"
    ],
    "cards": 32,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "nettilac-nm",
@@ -1123,9 +1164,9 @@
     "Notre régie",
     "Nos valeurs"
    ],
-   "cards": 26,
-   "new": 0,
-   "new_check": 0
+   "cards": 25,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "bersier",
@@ -2845,7 +2886,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 39,
+   "cards": 42,
    "new": 0,
    "new_check": 0
   },
@@ -2858,17 +2899,17 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-5?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 5 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 5,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-4?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 4 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 4,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 136,
-   "new": 4,
+   "cards": 111,
+   "new": 2,
    "new_check": 0
   },
   {
@@ -2910,8 +2951,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 4,
-   "new_check": 2
+   "new": 2,
+   "new_check": 0
   },
   {
    "id": "homegate",
