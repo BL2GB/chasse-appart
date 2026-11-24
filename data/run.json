@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T12:10:58+00:00",
+ "at": "2026-11-24T13:55:08+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -14,16 +14,16 @@
    "resolved_url": null,
    "final_url": "https://www.spg.ch/location/",
    "title": "Location - SPG",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 30,
-   "new": 1,
-   "new_check": 1
+   "cards": 22,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "rosset",
@@ -34,18 +34,18 @@
    "http": 200,
    "url": "https://www.rosset.ch/louer",
    "resolved_url": null,
-   "final_url": "https://www.rosset.ch/louer?page=2",
+   "final_url": "https://www.rosset.ch/louer?page=3",
    "title": "Biens à louer | Rosset",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 48,
-   "new": 0,
-   "new_check": 0
+   "cards": 72,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "comptoir-immo",
@@ -56,18 +56,18 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 48,
-   "new": 0,
-   "new_check": 0
+   "cards": 72,
+   "new": 4,
+   "new_check": 2
   },
   {
    "id": "moser-vernet",
@@ -280,8 +280,8 @@
     "Mise en valeur & financement"
    ],
    "cards": 27,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bdd",
@@ -468,7 +468,7 @@
     "2",
     "CHF 6'500.-"
    ],
-   "cards": 34,
+   "cards": 33,
    "new": 0,
    "new_check": 0
   },
@@ -554,8 +554,8 @@
     "3"
    ],
    "cards": 10,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "eam",
@@ -797,7 +797,7 @@
     "Page dot 2"
    ],
    "cards": 57,
-   "new": 1,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -1165,8 +1165,8 @@
     "Nos valeurs"
    ],
    "cards": 25,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bersier",
@@ -1476,7 +1476,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 34,
+   "cards": 32,
    "new": 0,
    "new_check": 0
   },
@@ -1489,18 +1489,18 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
-   "pages": 2,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=3",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 3",
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 22,
-   "new": 0,
-   "new_check": 0
+   "cards": 33,
+   "new": 2,
+   "new_check": 2
   },
   {
    "id": "cgi",
@@ -1511,17 +1511,17 @@
    "http": 200,
    "url": "https://www.gerances.ch/a-louer",
    "resolved_url": null,
-   "final_url": "https://www.gerances.ch/a-louer/page/2",
-   "title": "À Louer – Page 2 – GPF Gestion de Patrimoine Foncier SA | Votre agence immobilière à Genève",
-   "pages": 2,
+   "final_url": "https://www.gerances.ch/a-louer/page/3",
+   "title": "À Louer – Page 3 – GPF Gestion de Patrimoine Foncier SA | Votre agence immobilière à Genève",
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 24,
-   "new": 0,
+   "cards": 36,
+   "new": 1,
    "new_check": 0
   },
   {
@@ -2899,18 +2899,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-4?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 4 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 4,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-8?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 8 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 8,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 111,
-   "new": 2,
-   "new_check": 0
+   "cards": 211,
+   "new": 10,
+   "new_check": 6
   },
   {
    "id": "flatfox",
@@ -2951,8 +2951,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 2,
-   "new_check": 0
+   "new": 3,
+   "new_check": 1
   },
   {
    "id": "homegate",
