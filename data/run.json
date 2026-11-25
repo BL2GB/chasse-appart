@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T14:10:56+00:00",
+ "at": "2026-11-25T18:11:02+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 22,
+   "cards": 23,
    "new": 0,
    "new_check": 0
   },
@@ -56,18 +56,18 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 48,
-   "new": 0,
-   "new_check": 0
+   "cards": 72,
+   "new": 10,
+   "new_check": 4
   },
   {
    "id": "moser-vernet",
@@ -93,8 +93,8 @@
     "Services"
    ],
    "cards": 32,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bory",
@@ -180,7 +180,7 @@
     "Plus d’informations",
     "J'ai compris"
    ],
-   "cards": 30,
+   "cards": 36,
    "new": 0,
    "new_check": 0
   },
@@ -307,8 +307,8 @@
     "LIRE LA SUITE"
    ],
    "cards": 16,
-   "new": 0,
-   "new_check": 0
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "tournier",
@@ -432,7 +432,7 @@
     "2",
     "CHF 3'500.-"
    ],
-   "cards": 32,
+   "cards": 30,
    "new": 0,
    "new_check": 0
   },
@@ -730,7 +730,7 @@
     "Pièces",
     "Surface",
     "Prix",
-    "Précédent12345Suivant",
+    "Précédent1234567Suivant",
     "Précédent",
     "Précédent",
     "1",
@@ -748,19 +748,19 @@
     "5",
     "5",
     "5",
+    "6",
+    "6",
+    "6",
+    "7",
+    "7",
+    "7",
     "Suivant",
     "Suivant",
     "Page dot 1",
-    "Page dot 2",
-    "Page dot 3",
-    "Page dot 4",
-    "Page dot 5",
-    "Page dot 6",
-    "Page dot 7",
-    "Page dot 8",
-    "Page dot 9"
+    "Page dot 1",
+    "Page dot 2"
    ],
-   "cards": 56,
+   "cards": 55,
    "new": 0,
    "new_check": 0
   },
@@ -845,7 +845,7 @@
     "Achats & Locations",
     "Achats & Locations"
    ],
-   "cards": 7,
+   "cards": 6,
    "new": 0,
    "new_check": 0
   },
@@ -1411,16 +1411,16 @@
    "resolved_url": null,
    "final_url": "https://www.bernard-nicod.ch/fr/recherche/residentiel/location",
    "title": "Appartements et maisons à louer en Suisse romande",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 24,
-   "new": 0,
-   "new_check": 0
+   "cards": 36,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "naef",
@@ -1610,9 +1610,9 @@
     "Vendre",
     "Vendre"
    ],
-   "cards": 5,
-   "new": 0,
-   "new_check": 0
+   "cards": 6,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "psp",
@@ -2822,15 +2822,15 @@
    "final_url": "https://www.immobilier.ch/fr/agence/gerard-baezner-cie-17/louer/appartement/geneve/anieres/appartement-4-pieces-dernier-etage-1609214",
    "title": "Appartement 4 pces 128 m2 à louer à Anières | CHF 2'995.-/mois",
    "pages": 2,
-   "end": "incremental",
+   "end": "same",
    "more_capped": null,
-   "stopped_early": true,
+   "stopped_early": null,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 11,
-   "new": 0,
-   "new_check": 0
+   "cards": 12,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "immobilier-carouge",
@@ -2850,7 +2850,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 41,
+   "cards": 40,
    "new": 0,
    "new_check": 0
   },
@@ -2863,18 +2863,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-2?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 2 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 2,
-   "end": "incremental",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-29?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 29 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 29,
+   "end": "no_next",
    "more_capped": null,
-   "stopped_early": true,
+   "stopped_early": null,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 61,
-   "new": 0,
-   "new_check": 0
+   "cards": 715,
+   "new": 43,
+   "new_check": 34
   },
   {
    "id": "flatfox",
@@ -2915,8 +2915,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 3,
-   "new_check": 1
+   "new": 4,
+   "new_check": 3
   },
   {
    "id": "homegate",
