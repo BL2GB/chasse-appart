@@ -1,0 +1,48 @@
+{
+ "at": "2026-11-25T14:10:56+00:00",
+ "first_run": false,
+ "cards": [
+  {
+   "hash": "0b5399a46af5a617",
+   "source_id": "moser-vernet",
+   "source": "Moser Vernet",
+   "kind": "regie",
+   "href": "https://www.moservernet.ch/louer/appartements-geneve/geneve/geneve-15-1202/geneve-liotard-44-66m2-2/",
+   "text": "CHF 2’300.- / mois Rue Liotard 44 Petit-Saconnex 66 m2 4p",
+   "pre": "check",
+   "weak": false,
+   "detail": "RUE LIOTARD 44, 1202 GENÈVE Rue Liotard 44 REF. 2738.420020 CHF 2’300.- / mois + CHARGES : CHF 190.- DISPONIBILITÉ : 15/12/2026 66 m2 4p 2 4 pièces au 2ème étage comprenant une cuisine agencée et équipée (four, plaques, hotte, frigo, lave-vaisselle), un séjour, deux chambres, une salle de bains avec wc. Cave et buanderie à disposition. INSCRIPTION EN LIGNE FORMULAIRE CLASSIQUE Votre garantie de loyer sans dépôt bancaire. Dès CHF 25.- CALCULEZ VOTRE PRIME Pour visiter Cet objet vous intéresse ? Réservez votre visite selon votre meilleure convenance. Veuillez noter que la récupération des clés se fait à notre réception avant la visite. RÉSERVEZ LES CLÉS Caractéristiques LOCALISER LE BIEN SUR GOOGLE MAP Autres biens à découvrir 5 CHF 1’950.- / mois Charmant studio lumineux en Vieille-Ville Genève 25 m2 1.5 5 CHF 2’130.- / mois Chemin Taverney 5 Le Grand-Saconnex 67 m2 3.5 3 CHF 2’000.- / mois Rue Jacques-Dalphin 21 Carouge 0 m2 2.5 7 CHF 2’850.- / mois Lumineux dans les combles Genève 98 m2 3.5 1 3 CHF 2’500.- / mois Rue Liotard 38 Genève 69 m2 4 0 CHF 1’800.- / mois Chemin Neuf-de-Vésenaz 5 Vésenaz 51 m2 3 5 CHF 2’150.- / mois Chemin de Maisonneuve 12 B Châtelaine 74 m2 3 7 CHF 2’650.- / mois Bel appartement dans les combles Genève 96 m2 3.5 1"
+  },
+  {
+   "hash": "7b41bf4460bfd1f8",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/pl-du-marche-1227-carouge/86579946/",
+   "text": "Priority Location 1’608 CHF Appartement 2 pièces 1227 Carouge",
+   "pre": "out",
+   "weak": false
+  },
+  {
+   "hash": "71c28971dde10761",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/1218-le-grand-saconnex/86579840/",
+   "text": "Location 4’290 CHF Appartement 3 pièces 1218 Le Grand-Saconnex",
+   "pre": "out",
+   "weak": false
+  },
+  {
+   "hash": "e183e5ef9e02bd64",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/quai-du-rhone-4-1205-geneve/86579836/",
+   "text": "Location 3’200 CHF Appartement 3 ½ pièces 1205 Genève",
+   "pre": "check",
+   "weak": false,
+   "detail": null
+  }
+ ]
+}
