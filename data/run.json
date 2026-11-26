@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T10:11:22+00:00",
+ "at": "2026-11-26T12:11:41+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -34,7 +34,7 @@
    "http": 200,
    "url": "https://www.rosset.ch/louer",
    "resolved_url": null,
-   "final_url": "https://www.rosset.ch/louer?page=3",
+   "final_url": "https://www.rosset.ch/louer?page=2",
    "title": "Biens à louer | Rosset",
    "pages": 2,
    "end": "incremental",
@@ -43,7 +43,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 72,
+   "cards": 49,
    "new": 0,
    "new_check": 0
   },
@@ -97,40 +97,15 @@
     "Contact",
     "TYPE DE BIENS",
     "TYPE DE BIENS",
-    "PIÈCES & SURFACES",
-    "PIÈCES & SURFACES",
-    "PRIX",
-    "PRIX",
-    "LOCALITÉS",
-    "LOCALITÉS",
-    "+ DE CRITÈRES",
-    "+ DE CRITÈRES",
-    "+ DE CRITÈRES",
-    "+ DE CRITÈRES",
-    "+ DE CRITÈRES",
-    "Close",
-    "36 Appartements en location à Genève",
-    "AFFICHER LA LISTE",
-    "AFFICHER LA LISTE",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "Slide précédente",
-    "Slide suivante",
-    "CHF 1’300.- / mois",
-    "Chemin des Fleurettes 3",
-    "Petit-Saconnex",
-    "27\nm2\n1.5p",
-    "27\nm2",
-    "27\nm2",
-    "m2",
-    "2"
+    "TYPE DE BIENS",
+    "TYPE DE BIENS",
+    "TYPE DE BIENS",
+    "TYPE DE BIENS",
+    "TYPE DE BIENS"
    ],
    "cards": 32,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bory",
@@ -280,8 +255,8 @@
     "Mise en valeur & financement"
    ],
    "cards": 27,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bdd",
@@ -469,7 +444,7 @@
     "CHF 3'626.-"
    ],
    "cards": 31,
-   "new": 1,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -766,7 +741,7 @@
     "Pièces",
     "Surface",
     "Prix",
-    "Précédent1234567Suivant",
+    "Précédent123456Suivant",
     "Précédent",
     "Précédent",
     "1",
@@ -787,18 +762,18 @@
     "6",
     "6",
     "6",
-    "7",
-    "7",
-    "7",
     "Suivant",
     "Suivant",
     "Page dot 1",
     "Page dot 1",
-    "Page dot 2"
+    "Page dot 2",
+    "Page dot 3",
+    "Page dot 4",
+    "Page dot 1"
    ],
-   "cards": 55,
-   "new": 0,
-   "new_check": 0
+   "cards": 53,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "regie-centre",
@@ -882,8 +857,8 @@
     "Achats & Locations"
    ],
    "cards": 7,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "nettilac",
@@ -906,7 +881,7 @@
     "+",
     "−"
    ],
-   "cards": 31,
+   "cards": 30,
    "new": 0,
    "new_check": 0
   },
@@ -1038,8 +1013,8 @@
     "MULTIMÉDIA",
     "En images\nEn vidéo\nPublications"
    ],
-   "cards": 9,
-   "new": 0,
+   "cards": 10,
+   "new": 1,
    "new_check": 0
   },
   {
@@ -1164,7 +1139,7 @@
     "Notre régie",
     "Nos valeurs"
    ],
-   "cards": 25,
+   "cards": 27,
    "new": 2,
    "new_check": 1
   },
@@ -1454,7 +1429,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 24,
+   "cards": 22,
    "new": 0,
    "new_check": 0
   },
@@ -1915,6 +1890,8 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": [
+    "Menu",
+    "Menu",
     "Accueil",
     "Accueil",
     "Acheter",
@@ -1938,23 +1915,21 @@
     "Linkedin",
     "Linkedin",
     "Linkedin",
-    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
-    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
-    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
+    "À louer\nÀ vendre\nLoué\nVendu",
+    "À louer\nÀ vendre\nLoué\nVendu",
     "À louer\nÀ vendre\nLoué\nVendu",
     "À louer",
     "À vendre",
     "Loué",
     "Vendu",
-    "Status",
-    "Status",
-    "Status",
-    "Status",
     "Commercial",
     "- Office",
     "- Shop",
     "Residential",
-    "- Apartment"
+    "- Apartment",
+    "- Condo",
+    "- Single Family Home",
+    "- Studio"
    ],
    "cards": 6,
    "new": 0,
@@ -2899,17 +2874,17 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-6?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 6 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 6,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-8?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 8 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 8,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 161,
-   "new": 10,
+   "cards": 211,
+   "new": 9,
    "new_check": 5
   },
   {
@@ -2947,11 +2922,12 @@
     "Alertes e-mail",
     "Zoom in",
     "Zoom out",
-    "S'abonner"
+    "S'abonner",
+    "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 0,
-   "new_check": 0
+   "new": 3,
+   "new_check": 2
   },
   {
    "id": "homegate",
@@ -2969,7 +2945,7 @@
    "more_capped": null,
    "stopped_early": null,
    "error": null,
-   "page_excerpt": "www.homegate.ch Vérification de sécurité en cours Ce site utilise un service de sécurité pour se protéger contre les bots malveillants. Cette page s’affiche pendant que le site vérifie que vous n’êtes pas un bot. Ray ID: a60822a5b942093d Performances et sécurité par Cloudflare Confidentialité",
+   "page_excerpt": "www.homegate.ch Vérification de sécurité en cours Ce site utilise un service de sécurité pour se protéger contre les bots malveillants. Cette page s’affiche pendant que le site vérifie que vous n’êtes pas un bot. Ray ID: a608d35a4fca6192 Performances et sécurité par Cloudflare Confidentialité",
    "nav_hints": [],
    "cards": 0,
    "new": 0,
