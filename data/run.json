@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T12:49:25+00:00",
+ "at": "2026-11-26T14:11:04+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -34,18 +34,18 @@
    "http": 200,
    "url": "https://www.rosset.ch/louer",
    "resolved_url": null,
-   "final_url": "https://www.rosset.ch/louer?page=4",
+   "final_url": "https://www.rosset.ch/louer?page=3",
    "title": "Biens à louer | Rosset",
-   "pages": 4,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 98,
-   "new": 3,
-   "new_check": 1
+   "cards": 72,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "comptoir-immo",
@@ -56,18 +56,18 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 72,
-   "new": 1,
-   "new_check": 1
+   "cards": 48,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "moser-vernet",
@@ -90,22 +90,11 @@
     "Louer",
     "Acheter",
     "Nouvelles constructions",
-    "Services",
-    "Notre régie",
-    "Contact",
-    "Espace personnel",
-    "Contact",
-    "TYPE DE BIENS",
-    "TYPE DE BIENS",
-    "TYPE DE BIENS",
-    "TYPE DE BIENS",
-    "TYPE DE BIENS",
-    "TYPE DE BIENS",
-    "TYPE DE BIENS"
+    "Services"
    ],
    "cards": 32,
-   "new": 0,
-   "new_check": 0
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "bory",
@@ -167,7 +156,7 @@
     "Suivant"
    ],
    "cards": 20,
-   "new": 0,
+   "new": 1,
    "new_check": 0
   },
   {
@@ -367,6 +356,9 @@
     "PARKINGS",
     "PARKINGS",
     "PARKINGS",
+    "3 290 CHF.–/mois\n4.5 pièces",
+    "3 290 CHF.–/mois",
+    "4.5 pièces",
     "5 800 CHF.–/mois\n5 pièces",
     "5 800 CHF.–/mois",
     "5 pièces",
@@ -374,15 +366,12 @@
     "1 550 CHF.–/mois\n2.5 pièces",
     "1 550 CHF.–/mois",
     "2.5 pièces",
-    "1 950 CHF.–/mois\nSurface 52m2",
-    "1 950 CHF.–/mois",
-    "Surface 52m2",
-    "2",
-    "1 950 CHF.–/mois\nSurface 52m2"
+    "2.5 pièces à louer, Servette-Charmilles",
+    "1 550 CHF.–/mois"
    ],
-   "cards": 23,
-   "new": 0,
-   "new_check": 0
+   "cards": 24,
+   "new": 2,
+   "new_check": 1
   },
   {
    "id": "bordier-schmidhauser",
@@ -459,15 +448,15 @@
    "final_url": "https://fm-management.ch/rental-listings/page/2/",
    "title": "Biens à la location - Page 2 sur 2 - FM Management",
    "pages": 2,
-   "end": "incremental",
+   "end": "no_next",
    "more_capped": null,
-   "stopped_early": true,
+   "stopped_early": null,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 27,
-   "new": 0,
-   "new_check": 0
+   "cards": 28,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "besuchet",
@@ -606,9 +595,9 @@
     "Zoom in",
     "Zoom out"
    ],
-   "cards": 32,
-   "new": 0,
-   "new_check": 0
+   "cards": 33,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "regisseurs-leman",
@@ -856,7 +845,7 @@
     "Achats & Locations",
     "Achats & Locations"
    ],
-   "cards": 7,
+   "cards": 6,
    "new": 0,
    "new_check": 0
   },
@@ -1077,8 +1066,8 @@
     "3"
    ],
    "cards": 4,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "pilet-renaud",
@@ -1422,16 +1411,16 @@
    "resolved_url": null,
    "final_url": "https://www.bernard-nicod.ch/fr/recherche/residentiel/location",
    "title": "Appartements et maisons à louer en Suisse romande",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 34,
-   "new": 2,
-   "new_check": 1
+   "cards": 24,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "naef",
@@ -2371,7 +2360,7 @@
    "http": 200,
    "url": "https://www.c-re.ch",
    "resolved_url": "https://c-re.ch/a-louer/",
-   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40&show_map=false&paged=1&listing_type=rent#",
+   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40#",
    "title": "À louer - Classicus",
    "pages": 1,
    "end": "same",
@@ -2419,7 +2408,7 @@
     "LISTE CARTE",
     "LISTE",
     "CARTE",
-    "7 annonces trouvées"
+    "Le plus proche"
    ],
    "cards": 7,
    "new": 0,
@@ -2874,18 +2863,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-2?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 2 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 2,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-8?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 8 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 8,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 61,
-   "new": 0,
-   "new_check": 0
+   "cards": 211,
+   "new": 6,
+   "new_check": 3
   },
   {
    "id": "flatfox",
@@ -2926,8 +2915,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 0,
-   "new_check": 0
+   "new": 3,
+   "new_check": 1
   },
   {
    "id": "homegate",
@@ -2945,7 +2934,7 @@
    "more_capped": null,
    "stopped_early": null,
    "error": null,
-   "page_excerpt": "www.homegate.ch Vérification de sécurité en cours Ce site utilise un service de sécurité pour se protéger contre les bots malveillants. Cette page s’affiche pendant que le site vérifie que vous n’êtes pas un bot. Ray ID: a6090a879c7f4c9c Performances et sécurité par Cloudflare Confidentialité",
+   "page_excerpt": "www.homegate.ch Vérification de sécurité en cours Ce site utilise un service de sécurité pour se protéger contre les bots malveillants. Cette page s’affiche pendant que le site vérifie que vous n’êtes pas un bot. Ray ID: a60981e18d51d69d Performances et sécurité par Cloudflare Confidentialité",
    "nav_hints": [],
    "cards": 0,
    "new": 0,
