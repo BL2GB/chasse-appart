@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T12:11:41+00:00",
+ "at": "2026-11-26T12:49:25+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 22,
+   "cards": 23,
    "new": 0,
    "new_check": 0
   },
@@ -34,18 +34,18 @@
    "http": 200,
    "url": "https://www.rosset.ch/louer",
    "resolved_url": null,
-   "final_url": "https://www.rosset.ch/louer?page=2",
+   "final_url": "https://www.rosset.ch/louer?page=4",
    "title": "Biens à louer | Rosset",
-   "pages": 2,
+   "pages": 4,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 49,
-   "new": 0,
-   "new_check": 0
+   "cards": 98,
+   "new": 3,
+   "new_check": 1
   },
   {
    "id": "comptoir-immo",
@@ -56,18 +56,18 @@
    "http": 200,
    "url": "https://comptoir-immo.ch/location/appartement",
    "resolved_url": null,
-   "final_url": "https://comptoir-immo.ch/location/appartement/?page=2",
+   "final_url": "https://comptoir-immo.ch/location/appartement/?page=3",
    "title": "Appartements en location - Comptoir Immobilier",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 48,
-   "new": 0,
-   "new_check": 0
+   "cards": 72,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "moser-vernet",
@@ -465,7 +465,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 28,
+   "cards": 27,
    "new": 0,
    "new_check": 0
   },
@@ -772,8 +772,8 @@
     "Page dot 1"
    ],
    "cards": 53,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "regie-centre",
@@ -1013,8 +1013,8 @@
     "MULTIMÉDIA",
     "En images\nEn vidéo\nPublications"
    ],
-   "cards": 10,
-   "new": 1,
+   "cards": 8,
+   "new": 0,
    "new_check": 0
   },
   {
@@ -1063,22 +1063,22 @@
     "simplicité",
     "À la location",
     "À la location",
-    "CHF 3'800.-",
+    "CHF 500.-",
     "Genève",
     "Genève",
     "Genève",
-    "2\n 2\n 77.6 m2",
-    "2",
-    "2",
-    "2",
-    "2",
-    "77.6 m2",
-    "77.6 m2",
-    "m2"
+    "CHF 5'900.-",
+    "Vessy",
+    "Vessy",
+    "Vessy",
+    "3\n 3\n 135 m2\n 300 m2",
+    "3",
+    "3",
+    "3"
    ],
-   "cards": 3,
-   "new": 0,
-   "new_check": 0
+   "cards": 4,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "pilet-renaud",
@@ -1140,8 +1140,8 @@
     "Nos valeurs"
    ],
    "cards": 27,
-   "new": 2,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "bersier",
@@ -1422,16 +1422,16 @@
    "resolved_url": null,
    "final_url": "https://www.bernard-nicod.ch/fr/recherche/residentiel/location",
    "title": "Appartements et maisons à louer en Suisse romande",
-   "pages": 2,
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 22,
-   "new": 0,
-   "new_check": 0
+   "cards": 34,
+   "new": 2,
+   "new_check": 1
   },
   {
    "id": "naef",
@@ -1451,7 +1451,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 35,
+   "cards": 34,
    "new": 0,
    "new_check": 0
   },
@@ -1464,18 +1464,18 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=3",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 3",
-   "pages": 3,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 33,
-   "new": 1,
-   "new_check": 1
+   "cards": 22,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "cgi",
@@ -1515,7 +1515,7 @@
    "more_capped": null,
    "stopped_early": null,
    "error": null,
-   "page_excerpt": "Louer Prestige Acheter Nos prestations A propos Nos actualités Contact Votre espace FR|EN Acheter Louer + 0 km + 2 km + 5 km + 10 km + 15 km + 20 km + 30 km + 40 km Tous types de biens et surtout le vôtre Bienvenue sur le site de GEROFINANCE - RÉGIE DU RHÔNE. Présents sur le marché depuis 1886 et leaders immobiliers en Suisse romande, nous gérons plus de 2'006 immeubles pour un état locatif de 864 millions. Pionniers et instigateurs de la gestion de copropriétés en Suisse, nous administrons 481 PPE représentant environ 13'910 lots. Services & Prestations Copropriétés Mises en valeur Achat - Vente GERANCE A la une Au22 En savoir plus LES ACACIAS En savoir plus Velâdzo En savoir plus VOIR TOUS NOS PROJETS NEUFS A LOUER Gerofinance I Régie du Rhône @gerofinance 703 Posts 4.1K Followers 589 Following Follow Dernières actualités Gestion locative : définition, missions et conseils... Marché immobilier , Conseils , 30 oct. 2026 Plateforme Climat de l'économie Genève x Gerofinance... Actualité , Médias , 21 oct. 2026 Le Grand Tour de Gerofinance - Régie du Rhône Actualité , Médias , 20 oct. 2026 Appartement PPE : tout ce qu’il faut savoir sur la... Marché immobilier , Conseils , 24 août 2026 Copropriété : fonctionnement, règles et rôle de la... Marché immobilier , Conseils , 02 juil. 2026 Gérance Lausanne (Pully) Marché immobilier , Conseils , 27 mai 2026 Liste des régies à Genève Actualités , Médias , 18 mai 2026 Copropriété à Genève : fonctionnement, obligations... Marché immobil",
+   "page_excerpt": "Louer Prestige Acheter Nos prestations A propos Nos actualités Contact Votre espace FR|EN Acheter Louer + 0 km + 2 km + 5 km + 10 km + 15 km + 20 km + 30 km + 40 km Tous types de biens et surtout le vôtre Bienvenue sur le site de GEROFINANCE - RÉGIE DU RHÔNE. Présents sur le marché depuis 1886 et leaders immobiliers en Suisse romande, nous gérons plus de 2'006 immeubles pour un état locatif de 864 millions. Pionniers et instigateurs de la gestion de copropriétés en Suisse, nous administrons 481 PPE représentant environ 13'910 lots. Services & Prestations Copropriétés Mises en valeur Achat - Vente GERANCE A la une Au22 En savoir plus LES ACACIAS En savoir plus Velâdzo En savoir plus VOIR TOUS NOS PROJETS NEUFS A LOUER Gerofinance I Régie du Rhône @gerofinance 706 Posts 4.1K Followers 588 Following Follow Dernières actualités Gestion locative : définition, missions et conseils... Marché immobilier , Conseils , 30 oct. 2026 Plateforme Climat de l'économie Genève x Gerofinance... Actualité , Médias , 21 oct. 2026 Le Grand Tour de Gerofinance - Régie du Rhône Actualité , Médias , 20 oct. 2026 Appartement PPE : tout ce qu’il faut savoir sur la... Marché immobilier , Conseils , 24 août 2026 Copropriété : fonctionnement, règles et rôle de la... Marché immobilier , Conseils , 02 juil. 2026 Gérance Lausanne (Pully) Marché immobilier , Conseils , 27 mai 2026 Liste des régies à Genève Actualités , Médias , 18 mai 2026 Copropriété à Genève : fonctionnement, obligations... Marché immobil",
    "nav_hints": [
     "open/close navigation",
     "Louer",
@@ -1890,8 +1890,6 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": [
-    "Menu",
-    "Menu",
     "Accueil",
     "Accueil",
     "Acheter",
@@ -1915,21 +1913,23 @@
     "Linkedin",
     "Linkedin",
     "Linkedin",
-    "À louer\nÀ vendre\nLoué\nVendu",
-    "À louer\nÀ vendre\nLoué\nVendu",
+    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
+    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
+    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
     "À louer\nÀ vendre\nLoué\nVendu",
     "À louer",
     "À vendre",
     "Loué",
     "Vendu",
+    "Status",
+    "Status",
+    "Status",
+    "Status",
     "Commercial",
     "- Office",
     "- Shop",
     "Residential",
-    "- Apartment",
-    "- Condo",
-    "- Single Family Home",
-    "- Studio"
+    "- Apartment"
    ],
    "cards": 6,
    "new": 0,
@@ -2874,18 +2874,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-8?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 8 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 8,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-2?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 2 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 211,
-   "new": 9,
-   "new_check": 5
+   "cards": 61,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "flatfox",
@@ -2926,8 +2926,8 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 3,
-   "new_check": 2
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "homegate",
@@ -2945,7 +2945,7 @@
    "more_capped": null,
    "stopped_early": null,
    "error": null,
-   "page_excerpt": "www.homegate.ch Vérification de sécurité en cours Ce site utilise un service de sécurité pour se protéger contre les bots malveillants. Cette page s’affiche pendant que le site vérifie que vous n’êtes pas un bot. Ray ID: a608d35a4fca6192 Performances et sécurité par Cloudflare Confidentialité",
+   "page_excerpt": "www.homegate.ch Vérification de sécurité en cours Ce site utilise un service de sécurité pour se protéger contre les bots malveillants. Cette page s’affiche pendant que le site vérifie que vous n’êtes pas un bot. Ray ID: a6090a879c7f4c9c Performances et sécurité par Cloudflare Confidentialité",
    "nav_hints": [],
    "cards": 0,
    "new": 0,
