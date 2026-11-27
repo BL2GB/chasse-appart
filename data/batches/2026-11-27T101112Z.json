@@ -1,0 +1,163 @@
+{
+ "at": "2026-11-27T10:11:12+00:00",
+ "first_run": false,
+ "cards": [
+  {
+   "hash": "750571bcd37d42c5",
+   "source_id": "fm-management",
+   "source": "FM Management",
+   "kind": "regie",
+   "href": "https://fm-management.ch/rental-listings/quai-des-arenieres-5-pieces-denv-74-m%c2%b2-au-1er-etage/",
+   "text": "CHF 2'700.- Genève | Genève Quai des Arénières – 5 pièces d'env. 74 m² au 1er étage à Genève | Genève - 2 - 1 - 74 m2",
+   "pre": "check",
+   "weak": false,
+   "detail": "Suivant Quai des Arénières – 5 pièces d'env. 74 m² au 1er étage Suisse, Genève | Genève Description Référence: 2620.11011.07 - Quai des Arénières Pièces: 5 Nb de salles de bain: 1 Nb de chambres: 2 Surfaces: 74 m2 État: Très bon Charges mensuelles: CHF 200.- Description Situé sur le quai des Arénières, dans le quartier de la Jonction, cet appartement de 5 pièces d'environ 74 m² prend place au 1er étage d'un immeuble avec ascenseur. Distribution L'appartement offre une distribution claire et fonctionnelle, avec une hauteur sous plafond de 2.80 m : - Un hall d'entrée - Un séjour avec accès au balcon - Une salle à manger - Une cuisine indépendante avec accès au balcon - Deux chambres - Une salle de bains - Un WC séparé Deux balcons complètent ce bien. L’appartement dispose d’une cave. Buanderie commune au sous-sol de l’immeuble. Conditions de location - Loyer mensuel : CHF 2'700 .–/ mois - Charges : CHF 200.– / mois - Disponibilité : immédiate - Location : non meublée Visites & informations Pour toute demande de visite ou information complémentaire, nous vous invitons à nous contacter par e-mail : info@fm-management.ch (en précisant vos coordonnées téléphoniques et vos disponibilités). Procédure de location Après visite, en cas d’intérêt, nous vous invitons à télécharger le formulaire « Demande de location pour appartement » sur notre site : www.fm-management.ch (onglet « Formulaires »), puis à nous transmettre votre dossier complet à : location@fm-management.ch Adresse Arénières 1205 Genève CHF 2'700.- Agent immobilier AURORE BOULANGER E-mail info@fm-management.ch Téléphone 022 312 13 34 ENVOYER UN MESSAGE"
+  },
+  {
+   "hash": "7c725dd2bf0ce3c9",
+   "source_id": "gerofinance",
+   "source": "Gerofinance / Régie du Rhône",
+   "kind": "regie",
+   "href": "https://www.gerofinance.ch/immo-3157-100277325-beau-pieces-avec-terrasse-jardin.html",
+   "text": "Beau 3,5 pièces avec terrasse et jardin Rolle 3 pièce(s) • 2 chambre(s) CHF 2'550.- Découvrir ce bien",
+   "pre": "check",
+   "weak": false,
+   "detail": "10 PHOTOS APPARTEMENT ROLLE Beau 3,5 pièces avec terrasse et jardin Réf B-1252 Fiche du bien 3.0 pièces 2 chambres 90 m² 2 salles de bain Loyer net : CHF 2'550.- Charges : CHF 200.- VISITES sur inscription VENDREDI 4 décembre entre 9h et 10h - toutes les 10 minutes Situé proche de la plage public et du camping de Rolle dans un immeuble résidentiel avec ascenseur, cet agréable appartement rénové il y a une dizaine d'année profite d'un joli jardin et d'une vue sur les Alpes. DISTRIBUTION : - Entrée avec armoires et WC visiteurs - Cuisine équipée ouverte sur la - Pièce de vie (env. 30m2) avec cheminée et accès extérieur - Chambre avec armoires intégrées - Chambre avec salle de douche privée (sans WC) - Salle de bains avec WC et branchement pour lave-linge ANNEXES : - Cave - Place de parking intérieure LOYER : CHF 2'550.- Charges forfaitaires: CHF 200.- (chauffage et eau chaude) Parking : CHF 150.- pour 1 place intérieure TOTAL MENSUEL : CHF 2'900.- Disponible : date à convenir Ginette Firinu-Gonthier (agence de Coppet) +41 78 748 25 36 ginette.firinu-gonthier@grrsa.ch Je souhaite être contacté Je désire recevoir le dossier complet Je souhaite visiter ce bien * Champs obligatoire En remplissant ce formulaire, je reconnais avoir lu et compris la politique de confidentialité et j'accepte que mes informations soient traitées et utilisées conformément à celle-ci."
+  },
+  {
+   "hash": "0c7c3027e9db78e4",
+   "source_id": "immobilier-geneve",
+   "source": "immobilier.ch (Genève)",
+   "kind": "portail",
+   "href": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1&numberOfRoomsMin=2&radius=0",
+   "text": "588 appartements de 2 pièces et plus à louer dans la ville de Genève",
+   "pre": "out",
+   "weak": true
+  },
+  {
+   "hash": "b1120087adfa7cac",
+   "source_id": "immobilier-geneve",
+   "source": "immobilier.ch (Genève)",
+   "kind": "portail",
+   "href": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1&numberOfRoomsMin=3&radius=0",
+   "text": "503 appartements de 3 pièces et plus à louer dans la ville de Genève",
+   "pre": "out",
+   "weak": true
+  },
+  {
+   "hash": "ea82484688f44b8d",
+   "source_id": "immobilier-geneve",
+   "source": "immobilier.ch (Genève)",
+   "kind": "portail",
+   "href": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1&numberOfRoomsMin=5&radius=0",
+   "text": "203 appartements de 5 pièces et plus à louer dans la ville de Genève",
+   "pre": "check",
+   "weak": true
+  },
+  {
+   "hash": "aa4ffa19cb36481a",
+   "source_id": "immobilier-geneve",
+   "source": "immobilier.ch (Genève)",
+   "kind": "portail",
+   "href": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1&numberOfRoomsMin=2&radius=0",
+   "text": "588 appartements de 2 pièces et plus à louer dans la ville de Genève",
+   "pre": "out",
+   "weak": false
+  },
+  {
+   "hash": "91c15a6f3ad60b68",
+   "source_id": "immobilier-geneve",
+   "source": "immobilier.ch (Genève)",
+   "kind": "portail",
+   "href": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1&numberOfRoomsMin=3&radius=0",
+   "text": "503 appartements de 3 pièces et plus à louer dans la ville de Genève",
+   "pre": "out",
+   "weak": false
+  },
+  {
+   "hash": "2bffafd8889fc452",
+   "source_id": "immobilier-geneve",
+   "source": "immobilier.ch (Genève)",
+   "kind": "portail",
+   "href": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1&numberOfRoomsMin=5&radius=0",
+   "text": "203 appartements de 5 pièces et plus à louer dans la ville de Genève",
+   "pre": "check",
+   "weak": false,
+   "detail": "Louer dans la ville de Genève NEW Annonce recommandée par l'agence CHF 12'500.-/mois (+300.- charges) Appartement terrasse 11 pièces Genève, florissant Champel 335 m211 1 2 3 4 5 6 7 8 9 10 NEW CHF 1'490.-/mois Chambre 7.5 pièces Les Acacias, Rte des Acacias 16 170 m27.5 NEW CHF 4'000.-/mois Appartement 5 pièces 1209 Genève, Contactez l'agence pour l'adresse 119 m25 1 2 3 4 5 6 TOP Annonce recommandée par l'agence CHF 3'302.-/mois (+200.- charges) Appartement 5 pièces Genève, 9, rue des Savoises 1 m2325 1 2 3 4 5 6 7 8 TOP CHF 7'200.-/mois (+800.- charges) Attique 8 pièces 1208 Genève, Contactez l'agence pour l'adresse 227 m2338 1 2 3 4 TOP CHF 3'306.-/mois (+68.- charges) Attique 5 pièces 1205 Genève, Contactez l'agence pour l'adresse 5 1 2 3 4 5 6 7 8 9 NEW CHF 6'000.-/mois (+400.- charges) Appartement 5 pièces Genève, rue jean-charles-Amat 13 172 m25 1 2 3 4 5 6 7 8 9 NEW CHF 4'500.-/mois Appartement 6 pièces Genève, rue des pitons 7 120 m26 1 2 3 4 5 6 7 8 9 NEW CHF 4'300.-/mois (+240.- charges) Appartement 6 pièces 1201 Genève, Contactez l'agence pour l'adresse 137 m2326 1 2 3 4 5 6 7 8 9 10 11 12 NEW CHF 3'780.-/mois (+240.- charges) Appartement 6 pièces Genève, Rue Abraham-Gevray 5 36 1 2 3 4 5 6 NEW CHF 4'700.-/mois (+380.- charges) Appartement 6 pièces Genève, Rue de Lausanne 139 136 m26 1 2 3 4 5 6 7 NEW CHF 2'850.-/mois (+160.- charges) Appartement 5 pièces Genève, Rue de Monthoux 36 85 m2325 1 2 3 4 5 6 7 8 9 10 NEW CHF 4'635.-/mois Appartement 5.5 pièces Genève, Ch. Docteur Adolphe Pasteur 110 m25.5 NEW CHF 3'500.-/mois (+175.- charges) Appartement 5 pièces Genève, Rue Henri-Blanvalet 10 5 1 2 3 4 5 6 7 8 9 10 11 NEW CHF 3'096.-/mois Appartement 6 pièces 1203 Genève, Contactez l'agence pour l'adresse 6 1 2 3 4 5 6 NEW CHF 3'697.-/mois (+240.- charges) Appartement 6 pièces Genève, chemin de la chevillarde 120 m26 1 2 3 4 5 6 7 8 9 NEW CHF 6'225.-/mois Appartement 6 pièces Genève, avenue krieg 194 m2326 1 2 3 4 5 6 7 NEW CHF 3'375.-/mois (+240.- charges) Appartement 5.5 pièces Genève, Rue le Corbusier 11 95 m235.5 Ne ratez aucun bien Recevez par email les nouveaux biens dès leur publication Créer votre alerte email 1 2 3 4 5 6 NEW CHF 4'200.-/mois (+300.- charges) Appartement 6 pièces 1208 Genève, Contactez l'agence pour l'adresse 119 m2326 1 2 3 4 5 6 7 NEW CHF 3'500.-/mois Appartement 5 pièces 1209 Genève, Contactez l'agence pour l'adresse 120 m2325 1 2 3 4 5 6 7 8 9 10 NEW CHF 3'500.-/mois (+380.- charges) Dernier étage 5 pièces Genève, Bvd de Saint-Georges 64 120 m2325 NEW CHF 4'600.-/mois (+300.- charges) Appartement 5.5 pièces Genève, Rue de Lausanne 89 128 m25.5 NEW CHF 2'200.-/mois (+210.- charges) Appartement 5.5 pièces Genève, La Voie-Creuse 8 97 m25.5 1 2 3 4 5 6 7 8 9 NEW CHF 2'320.-/mois (+486.- charges) Appartement 5 pièces Les Acacias, Rue Caroline 24 100 m25 1 2 3 ... 9 Suivant Page 1 sur 9 Créer votre alerte e-mail Louer un appartement dans la ville de Genève Louer > Appartement > Geneve > geneve La ville de Genève se situe dans le canton de Genève. immobilier.ch vous propose 203 appartements à louer à Genève. Tous les biens à louer sont proposés par les agences immobilières de la région. Vous envisagez de louer un appartement à Genève? Voici quelques informations pour votre location immobilière: Chef-lieu du canton de Genève, la ville du même nom est une métropole moderne à l'économie prospère. Catégorisée « ville mondiale », son territoire accueille pratiquement tous les organismes internationaux et organis"
+  },
+  {
+   "hash": "d197d20caa714d79",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/1208-genf/86587277/",
+   "text": "Priority Location 835 CHF Appartement 2 pièces 1208 Genf",
+   "pre": "out",
+   "weak": false
+  },
+  {
+   "hash": "d392bb160be81c6b",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/avenue-edmond-vaucher-1219-chatelaine/86587273/",
+   "text": "Priority Location 3’270 CHF Appartement 4 pièces 1219 Châtelaine",
+   "pre": "check",
+   "weak": false,
+   "detail": "Recherche Publier une annonce Business A propos de nous Se connecter Français Priority Appartement 3 ½ pièces à louer à Châtelaine Avenue Edmond-Vaucher, 1219 Châtelaine - CHF 3’760 Favorites Partager Loyer Loyer brut (charges incluses): CHF 3’760 par mois Détails Référence: ..1074225578 Nombre de pièces: 3 ½ Disponibilité: Sur demande Votre assurance ménage: Calculer la prime Nouveau logement? Protégez-le avec l’assurance ménage de la Mobilière. Extrait du registre des poursuites: Commander maintenant Livré directement par e-mail en 2 jours maximum. Environnement Description 4 pièces, 103 m², balcon 20 m², face au parc Bel appartement de 4 pièces (103 m², 2 chambres) au 1er étage d'une petite PPE soignée construite en 2010, dans un quartier calme face à un grand parc, à quelques minutes de Balexert. L'APPARTEMENT Séjour de 24.7 m² ouvrant sur un grand balcon de 20 m² Salle à manger séparée de 10 m², ouverte sur la cuisine Cuisine agencée : deux fours Siemens, plaque à induction, lave-vaisselle, nombreux rangements 2 chambres (15.3 m² et 12.4 m²) avec armoires Salle de bains avec WC, raccordement machine à laver privatif WC visiteurs séparé avec lavabo Hall d'entrée avec armoires encastrées, parquet, grandes baies vitrées Cave privative L'IMMEUBLE Entrée sécurisée avec interphone, conciergerie, ascenseur, buanderie commune, local vélos et poussettes. LE QUARTIER Crèche et école primaire à proximité, Balexert et commerces, arrêts TPG à pied, accès rapide à l'autoroute. CONDITIONS Loyer net : CHF 2'950. Charges (acompte chauffage / eau chaude) : CHF 320. Total : CHF 3'270. par mois Place de parking intérieure : CHF 200. Disponible immédiatement ou à convenir Contacter l'annonceur Message Encore 14 jours avant de pouvoir écrire à cet annonceur. Avec Flatfox Priority, vous pouvez le faire tout de suite. Commander l'extrait du registre des poursuites en ligne Commandé en 5 min, livré par email en 1-2 jours. Voir l'offre Inscrivez-vous pour annonces à Vernier Être averti instantanément lorsque des annonces similaires à Vernier arrivent. Créer une alerte e-mail Annonces similaires autour de Vernier Location 3’480 CHF Meublé Appartement meublé 4 pièces 1203 Genève Location 3’200 CHF Appartement 4 pièces Cointrin 1216 Cointrin Location 3’080 CHF Appartement 4 pièces Chemin Moïse-Duboule 43 1209 Genève Afficher plus... Flatfox AG A propos de nous Contact Impression CGV Politique des Données Paramètres de Confidentialité Nos Produits Business Rechercher un appartement Publier une annonce gratuitement Commander extrait du registre des poursuites Résiliation du bail à loyer Assurance responsabilité civile privée Publicité Explorer FAQ Postes vacants Blog ImmoScout24 Sur les Réseaux Sociaux Langue English Deutsch Italiano Français © Flatfox – Made in Switzerland with ♥"
+  },
+  {
+   "hash": "f572a57249effda2",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/chemin-des-crets-de-champel-1206-genf/86587267/",
+   "text": "Priority Location 3’390 CHF Appartement 5 pièces 1206 Genf",
+   "pre": "check",
+   "weak": false,
+   "detail": "Recherche Publier une annonce Business A propos de nous Se connecter Français Priority Appartement 5 pièces à louer à Genf Chemin des crêts de champel, 1206 Genf - CHF 4’000 Favorites Partager Loyer Loyer brut (charges incluses): CHF 4’000 par mois Détails Référence: ..1074226173 Nombre de pièces: 5 Surface: 86 m² Disponibilité: Sur demande Votre assurance ménage: Calculer la prime Nouveau logement? Protégez-le avec l’assurance ménage de la Mobilière. Extrait du registre des poursuites: Commander maintenant Livré directement par e-mail en 2 jours maximum. Environnement Description Appartement de 5 pièces à Genève - Quartier Crêt de Champel Appartement de 5 pièces au 2ème étage de 106 m2. Situé dans le quartier de Champel au coeur de Genève. Lappartement se compose comme suit : un hall dentrée un grand séjour avec balcon une cuisine séparée & équipée ( frigo, four, plaque, hotte, lave-vaisselle ) avec balcon 3 chambres une salle de bain avec prise lave linge WC visiteur Une place de parking en souterrain est possible à 250.- Avons-nous éveillé votre intérêt ? Dans ce cas, nhésitez pas à prendre contact avec nous directement. Service Courtage Speedimmo Nicolas Nache +41 (0)78 231 36 36 Contacter l'annonceur Message Encore 14 jours avant de pouvoir écrire à cet annonceur. Avec Flatfox Priority, vous pouvez le faire tout de suite. Vous avez besoin d'aide pour déménager? Recevez gratuitement et sans engagement 5 offres pour un déménagement et/ou un nettoyage. Recevoir des offres gratuites Inscrivez-vous pour annonces à Genf Être averti instantanément lorsque des annonces similaires à Genf arrivent. Créer une alerte e-mail Annonces similaires autour de Genf Location 3’400 CHF Appartement 5 pièces Rue de Monthoux 25 1201 Genève Location 3’500 CHF Appartement mansardé 4 pièces Bd des Philosophes 24 1205 Genève Location 3’410 CHF Appartement 5 pièces 1206 Genf Afficher plus... Flatfox AG A propos de nous Contact Impression CGV Politique des Données Paramètres de Confidentialité Nos Produits Business Rechercher un appartement Publier une annonce gratuitement Commander extrait du registre des poursuites Résiliation du bail à loyer Assurance responsabilité civile privée Publicité Explorer FAQ Postes vacants Blog ImmoScout24 Sur les Réseaux Sociaux Langue English Deutsch Italiano Français © Flatfox – Made in Switzerland with ♥"
+  },
+  {
+   "hash": "5944f7154e078097",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/rue-des-pecheries-15-1205-genf/86587263/",
+   "text": "Priority Location 2’270 CHF Appartement 3 pièces 1205 Genf",
+   "pre": "out",
+   "weak": false
+  },
+  {
+   "hash": "f2cac2f4b48d9bb8",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/lancienne-route-42a-1218-le-grand-saconnex/86587060/",
+   "text": "Location 2’850 CHF Appartement 5 pièces 1218 Le Grand-Saconnex",
+   "pre": "check",
+   "weak": false,
+   "detail": "Recherche Publier une annonce Business A propos de nous Se connecter Français Voir toutes les images de 7 Appartement 5 ½ pièces à louer à Le Grand-Saconnex L'Ancienne-Route 42A, 1218 Le Grand-Saconnex - CHF 3’165 Favorites Partager Loyer Loyer brut (charges incluses): CHF 3’165 par mois Loyer net (hors charges): CHF 3’050 par mois Charges: CHF 115 par mois Détails Référence: mig-1277-6359797.. Nombre de pièces: 5 ½ Caractéristiques: Animaux acceptés Disponibilité: Immédiatement Votre assurance ménage: Calculer la prime Nouveau logement? Protégez-le avec l’assurance ménage de la Mobilière. Extrait du registre des poursuites: Commander maintenant Livré directement par e-mail en 2 jours maximum. Environnement Description Chaleureux appartement - Le Grand-Saconnex Situé sur la voie historique qui traverse le village du Grand-Saconnex, bel appartement de 5 pièces d'environ 100m2 reparti sur 3 niveaux. Au rez-de-chaussée : Hall d'entrée WC visiteurs Cuisine entièrement agencée et équipée ouverte sur la salle à manger Réduit / garde manger Au 1er étage : Séjour avec poêle Chambre à coucher avec armoires murales Salle de douche / WC Au 2ème étage : Chambre à coucher Salle de bains / WC Pièce pouvant servir de chambre, de bureau ou de dressing LOYER : CHF 2'850.00 CHARGES (FORFAIT) : CHF 450.00 DISPONIBILITE : 16.01.2026 - Disponible rapidement Contacter l'annonceur Nom E-mail Téléphone Créer un abonnement de recherche pour les annonces similaires Confirmez que vous n'êtes pas un robot... Commander l'extrait du registre des poursuites en ligne Commandé en 5 min, livré par email en 1-2 jours. Voir l'offre Inscrivez-vous pour annonces à Le Grand-Saconnex Être averti instantanément lorsque des annonces similaires à Le Grand-Saconnex arrivent. Créer une alerte e-mail Annonceur SPG Locations résidentielles Route de Chêne 36 1211 Genève 6 Voir toutes les annonces Annonces similaires autour de Le Grand-Saconnex Location 2’550 CHF Appartement 2 ½ pièces Rte de Colovrex 3 1218 Le Grand-Saconnex Location 2’900 CHF Appartement 5 pièces Rue de la dôle 16 1203 Genf Location 2’750 CHF Appartement 5 pièces Rue du Village-Suisse 4 1205 Genève Afficher plus... Flatfox AG A propos de nous Contact Impression CGV Politique des Données Paramètres de Confidentialité Nos Produits Business Rechercher un appartement Publier une annonce gratuitement Commander extrait du registre des poursuites Résiliation du bail à loyer Assurance responsabilité civile privée Publicité Explorer FAQ Postes vacants Blog ImmoScout24 Sur les Réseaux Sociaux Langue English Deutsch Italiano Français © Flatfox – Made in Switzerland with ♥"
+  },
+  {
+   "hash": "61f505181e126bb2",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/chemin-taverney-1218-le-grand-saconnex/86586894/",
+   "text": "Location 1’190 CHF Meublé Chambre individuelle 1 pièce 1218 Le Grand-Saconnex",
+   "pre": "out",
+   "weak": false
+  },
+  {
+   "hash": "5b855aa0484a6b83",
+   "source_id": "flatfox",
+   "source": "Flatfox",
+   "kind": "portail",
+   "href": "https://flatfox.ch/fr/flat/arenieres-1205-geneve/86519326/",
+   "text": "Location 2’900 CHF Appartement 5 pièces 1205 Genève",
+   "pre": "check",
+   "weak": false,
+   "detail": "Recherche Publier une annonce Business A propos de nous Se connecter Français Appartement 4 ½ pièces à louer à Genève Arénières, 1205 Genève - CHF 3’130 Favorites Partager Loyer Loyer brut (charges incluses): CHF 3’130 par mois Loyer net (hors charges): CHF 2’915 par mois Charges: CHF 215 par mois Détails Référence: 2620.11011.07 - Quai des Arénières.. Nombre de pièces: 4 ½ Étage: 1er étage Surface: 61 m² Disponibilité: Sur demande Votre assurance ménage: Calculer la prime Nouveau logement? Protégez-le avec l’assurance ménage de la Mobilière. Extrait du registre des poursuites: Commander maintenant Livré directement par e-mail en 2 jours maximum. Environnement Description Quai des Arénières ? 5 pièces d'env. 74 m² au 1er étage Situé sur le quai des Arénières, dans le quartier de la Jonction, cet appartement de 5 pièces d'environ 74 m² prend place au 1er étage d'un immeuble avec ascenseur. Distribution L'appartement offre une distribution claire et fonctionnelle, avec une hauteur sous plafond de 2.80 m : - Un hall d'entrée - Un séjour avec accès au balcon - Une salle à manger - Une cuisine indépendante avec accès au balcon - Deux chambres - Une salle de bains - Un WC séparé Deux balcons complètent ce bien. L'appartement dispose d'une cave. Buanderie commune au sous-sol de l'immeuble. Conditions de location - Loyer mensuel : CHF 2'700 .?/ mois - Charges : CHF 200.? / mois - Disponibilité : immédiate - Location : non meublée Visites & informations Pour toute demande de visite ou information complémentaire, nous vous invitons à nous contacter par e-mail : info@fm-management.ch (en précisant vos coordonnées téléphoniques et vos disponibilités). Procédure de location Après visite, en cas d'intérêt, nous vous invitons à télécharger le formulaire Demande de location pour appartement sur notre site : www.fm-management.ch (onglet Formulaires ), puis à nous transmettre votre dossier complet à : location@fm-management.ch Contacter l'annonceur Nom E-mail Téléphone Créer un abonnement de recherche pour les annonces similaires Veuillez patienter... Toujours accompagné dans vos affaires juridiques Assurance protection juridique avec consultation gratuite et prise en charge des frais de justice. Découvrez tous les avantages Inscrivez-vous pour annonces à Genève Être averti instantanément lorsque des annonces similaires à Genève arrivent. Créer une alerte e-mail Annonceur FM Management Sàrl rue du Vieux-Collège 10 1204 Genève Voir toutes les annonces Annonces similaires autour de Genève Location 2’900 CHF Appartement 5 pièces Rue de la dôle 16 1203 Genf Location 2’750 CHF Appartement 5 pièces Rue du Village-Suisse 4 1205 Genève Location 3’108 CHF Appartement 4 ½ pièces Boulevard du Pont-d'Arve 1205 Genf Afficher plus... Flatfox AG A propos de nous Contact Impression CGV Politique des Données Paramètres de Confidentialité Nos Produits Business Rechercher un appartement Publier une annonce gratuitement Commander extrait du registre des poursuites Résiliation du bail à loyer Assurance responsabilité civile privée Publicité Explorer FAQ Postes vacants Blog ImmoScout24 Sur les Réseaux Sociaux Langue English Deutsch Italiano Français © Flatfox – Made in Switzerland with ♥"
+  }
+ ]
+}
