@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T14:11:02+00:00",
+ "at": "2026-11-27T16:11:32+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -14,16 +14,16 @@
    "resolved_url": null,
    "final_url": "https://www.spg.ch/location/",
    "title": "Location - SPG",
-   "pages": 3,
+   "pages": 2,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 32,
-   "new": 2,
-   "new_check": 2
+   "cards": 23,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "rosset",
@@ -89,10 +89,9 @@
    "nav_hints": [
     "Louer",
     "Acheter",
-    "Nouvelles constructions",
-    "Services"
+    "N"
    ],
-   "cards": 29,
+   "cards": 28,
    "new": 0,
    "new_check": 0
   },
@@ -433,8 +432,8 @@
     "CHF 3'626.-"
    ],
    "cards": 31,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "fm-management",
@@ -454,9 +453,9 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 30,
-   "new": 2,
-   "new_check": 1
+   "cards": 31,
+   "new": 3,
+   "new_check": 0
   },
   {
    "id": "besuchet",
@@ -595,9 +594,9 @@
     "Zoom in",
     "Zoom out"
    ],
-   "cards": 34,
-   "new": 2,
-   "new_check": 2
+   "cards": 35,
+   "new": 1,
+   "new_check": 0
   },
   {
    "id": "regisseurs-leman",
@@ -634,9 +633,9 @@
     "Zoom in",
     "Zoom out"
    ],
-   "cards": 7,
-   "new": 0,
-   "new_check": 0
+   "cards": 8,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "regimo",
@@ -1453,18 +1452,18 @@
    "http": 200,
    "url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B%5D=1&type%5B%5D=2&type%5B%5D=9&type%5B%5D=10&type%5B%5D=12&type%5B%5D=14&type%5B%5D=11",
    "resolved_url": null,
-   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=2",
-   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 2",
-   "pages": 2,
+   "final_url": "https://www.gerofinance.ch/p3157-alouer.html?type%5B0%5D=1&type%5B1%5D=2&type%5B2%5D=9&type%5B3%5D=10&type%5B4%5D=12&type%5B5%5D=14&type%5B6%5D=11&modeAchatOrLocation=location&interval_nbr_pieces=0%7C11&fake_maxi_interval_nbr_pieces=11&interval_price=590%7C21000&fake_mini_interval_price=590&fake_maxi_interval_price=21000&interval_surface=0%7C380&fake_maxi_interval_surface=380&interval_etage=0%7C61&fake_maxi_interval_etage=61&p=3",
+   "title": "Appartements, maisons à louer : Gerofinance | Régie du Rhône | page 3",
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 22,
-   "new": 0,
-   "new_check": 0
+   "cards": 33,
+   "new": 2,
+   "new_check": 1
   },
   {
    "id": "cgi",
@@ -1475,18 +1474,18 @@
    "http": 200,
    "url": "https://www.gerances.ch/a-louer",
    "resolved_url": null,
-   "final_url": "https://www.gerances.ch/a-louer/page/2",
-   "title": "À Louer – Page 2 – GPF Gestion de Patrimoine Foncier SA | Votre agence immobilière à Genève",
-   "pages": 2,
+   "final_url": "https://www.gerances.ch/a-louer/page/3",
+   "title": "À Louer – Page 3 – GPF Gestion de Patrimoine Foncier SA | Votre agence immobilière à Genève",
+   "pages": 3,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 24,
-   "new": 0,
-   "new_check": 0
+   "cards": 36,
+   "new": 1,
+   "new_check": 1
   },
   {
    "id": "dunand",
@@ -1891,6 +1890,20 @@
     "Estimer",
     "Contact",
     "Contact",
+    "Menu",
+    "Menu",
+    "Accueil",
+    "Accueil",
+    "Acheter",
+    "Acheter",
+    "Louer",
+    "Louer",
+    "Vendre",
+    "Vendre",
+    "Estimer",
+    "Estimer",
+    "Contact",
+    "Contact",
     "Facebook\n \nInstagram\n \nLinkedin",
     "Facebook\n \nInstagram\n \nLinkedin",
     "Facebook",
@@ -1902,23 +1915,9 @@
     "Linkedin",
     "Linkedin",
     "Linkedin",
-    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
-    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
-    "À louer\nÀ vendre\nLoué\nVendu\nStatus",
     "À louer\nÀ vendre\nLoué\nVendu",
-    "À louer",
-    "À vendre",
-    "Loué",
-    "Vendu",
-    "Status",
-    "Status",
-    "Status",
-    "Status",
-    "Commercial",
-    "- Office",
-    "- Shop",
-    "Residential",
-    "- Apartment"
+    "À louer\nÀ vendre\nLoué\nVendu",
+    "À louer\nÀ vendre\nLoué\nVendu"
    ],
    "cards": 6,
    "new": 0,
@@ -2360,7 +2359,7 @@
    "http": 200,
    "url": "https://www.c-re.ch",
    "resolved_url": "https://c-re.ch/a-louer/",
-   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40&show_map=false&paged=1&listing_type=rent#",
+   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40#",
    "title": "À louer - Classicus",
    "pages": 1,
    "end": "same",
@@ -2408,7 +2407,7 @@
     "LISTE CARTE",
     "LISTE",
     "CARTE",
-    "7 annonces trouvées"
+    "Le plus proche"
    ],
    "cards": 7,
    "new": 0,
@@ -2863,18 +2862,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-4?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 4 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 4,
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-7?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 7 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 7,
    "end": "incremental",
    "more_capped": null,
    "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 111,
-   "new": 2,
-   "new_check": 2
+   "cards": 186,
+   "new": 4,
+   "new_check": 3
   },
   {
    "id": "flatfox",
@@ -2915,7 +2914,7 @@
     "Gérer mes préférences"
    ],
    "cards": 400,
-   "new": 1,
+   "new": 5,
    "new_check": 1
   },
   {
@@ -2934,7 +2933,7 @@
    "more_capped": null,
    "stopped_early": null,
    "error": null,
-   "page_excerpt": "www.homegate.ch Vérification de sécurité en cours Ce site utilise un service de sécurité pour se protéger contre les bots malveillants. Cette page s’affiche pendant que le site vérifie que vous n’êtes pas un bot. Ray ID: a611bf586d92e642 Performances et sécurité par Cloudflare Confidentialité",
+   "page_excerpt": "www.homegate.ch Vérification de sécurité en cours Ce site utilise un service de sécurité pour se protéger contre les bots malveillants. Cette page s’affiche pendant que le site vérifie que vous n’êtes pas un bot. Ray ID: a612709a7d6e0c31 Performances et sécurité par Cloudflare Confidentialité",
    "nav_hints": [],
    "cards": 0,
    "new": 0,
