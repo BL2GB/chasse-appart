@@ -1,5 +1,5 @@
 {
- "at": "2026-11-28T11:57:57+00:00",
+ "at": "2026-11-28T12:10:57+00:00",
  "first_run": false,
  "full": false,
  "sources": [
@@ -21,7 +21,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 24,
+   "cards": 22,
    "new": 0,
    "new_check": 0
   },
@@ -34,7 +34,7 @@
    "http": 200,
    "url": "https://www.rosset.ch/louer",
    "resolved_url": null,
-   "final_url": "https://www.rosset.ch/louer?page=3",
+   "final_url": "https://www.rosset.ch/louer?page=2",
    "title": "Biens à louer | Rosset",
    "pages": 2,
    "end": "incremental",
@@ -43,7 +43,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 72,
+   "cards": 48,
    "new": 0,
    "new_check": 0
   },
@@ -1439,7 +1439,7 @@
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 35,
+   "cards": 33,
    "new": 0,
    "new_check": 0
   },
@@ -1761,8 +1761,8 @@
     "JUSSY (GE) – Maison type chalet 6.5pces"
    ],
    "cards": 9,
-   "new": 1,
-   "new_check": 1
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "regisseurs",
@@ -2359,7 +2359,7 @@
    "http": 200,
    "url": "https://www.c-re.ch",
    "resolved_url": "https://c-re.ch/a-louer/",
-   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40#",
+   "final_url": "https://c-re.ch/a-louer/?posts_per_page=40&show_map=false&paged=1&listing_type=rent#",
    "title": "À louer - Classicus",
    "pages": 1,
    "end": "same",
@@ -2407,7 +2407,7 @@
     "LISTE CARTE",
     "LISTE",
     "CARTE",
-    "Le plus proche"
+    "7 annonces trouvées"
    ],
    "cards": 7,
    "new": 0,
@@ -2862,18 +2862,18 @@
    "http": 200,
    "url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-1?clrs=1",
    "resolved_url": null,
-   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-30?t=rent&c=1&p=c10377&nb=false&gr=1",
-   "title": "Page 30 appartements à louer à Genève (GE) — immobilier.ch",
-   "pages": 30,
-   "end": "no_next",
+   "final_url": "https://www.immobilier.ch/fr/louer/appartement/geneve/geneve/page-2?t=rent&c=1&p=c10377&nb=false&gr=1",
+   "title": "Page 2 appartements à louer à Genève (GE) — immobilier.ch",
+   "pages": 2,
+   "end": "incremental",
    "more_capped": null,
-   "stopped_early": null,
+   "stopped_early": true,
    "error": null,
    "page_excerpt": null,
    "nav_hints": null,
-   "cards": 743,
-   "new": 35,
-   "new_check": 31
+   "cards": 61,
+   "new": 0,
+   "new_check": 0
   },
   {
    "id": "flatfox",
@@ -2933,7 +2933,7 @@
    "more_capped": null,
    "stopped_early": null,
    "error": null,
-   "page_excerpt": "www.homegate.ch Vérification de sécurité en cours Ce site utilise un service de sécurité pour se protéger contre les bots malveillants. Cette page s’affiche pendant que le site vérifie que vous n’êtes pas un bot. Ray ID: a6193a3ec8683acc Performances et sécurité par Cloudflare Confidentialité",
+   "page_excerpt": "www.homegate.ch Vérification de sécurité en cours Ce site utilise un service de sécurité pour se protéger contre les bots malveillants. Cette page s’affiche pendant que le site vérifie que vous n’êtes pas un bot. Ray ID: a6194c66c96ec936 Performances et sécurité par Cloudflare Confidentialité",
    "nav_hints": [],
    "cards": 0,
    "new": 0,
